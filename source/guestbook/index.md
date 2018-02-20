@@ -1,7 +1,8 @@
 ---
-title: 留言板
-date: 2018-02-11 16:40:08
-type: "board"
+title: 留言簿
+date: 2017-03-29 19:35:15
+type: "guestbook"
+notitle: true
 ---
 
 <div class="aplayer"
@@ -18,9 +19,3 @@ type: "board"
 --><p style="text-align: right; font-style: italic; padding-right: 4em; color: #999;"> ——— 可怜的老十三</p>
 
 {% endcq %}
-
-
-
-
-
-
