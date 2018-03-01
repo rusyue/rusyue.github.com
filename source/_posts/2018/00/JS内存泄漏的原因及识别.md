@@ -1,7 +1,7 @@
 ---
 title: JS内存泄漏的原因及识别
 date: 2017-04-11 14:42:04
-categories: 前端
+categories: 前端相关
 tags:
     - JavaScript
     - 内存泄漏

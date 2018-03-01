@@ -1,7 +1,7 @@
 ---
 title: HTTP状态码
 date: 2017-04-16 23:42:36
-categories: 前端
+categories: 前端相关
 tags:
     - HTTP
 ---

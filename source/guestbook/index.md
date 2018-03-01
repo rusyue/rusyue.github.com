@@ -14,8 +14,6 @@ notitle: true
 
 {% cq %}
 
-<p style="font-size: 22px; margin-bottom: 0;">随便说点儿什么吧~ Σ( ° △ °|||)︴</p><!--
-取消换行符
---><p style="text-align: right; font-style: italic; padding-right: 4em; color: #999;"> ——— 可怜的老十三</p>
+<p style="font-size: 22px;">随便说点儿什么吧~ Σ( ° △ °|||)︴</p><p class="cq-author"> ——— 可怜的老十三</p>
 
 {% endcq %}

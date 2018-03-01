@@ -1,7 +1,6 @@
 ---
 title: Qzone Images
 date: 2018-01-09 22:11:40
-categories: 图集
 tags:
     - 图集
     - Pixiv

@@ -1,8 +1,6 @@
 ---
 title: 原生JS使用sort方法实现对象数组排序
 date: 2017-04-03 20:05:57
-categories:
-    - 前端
 tags:
     - 前端
     - 随笔

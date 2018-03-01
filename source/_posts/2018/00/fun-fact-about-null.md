@@ -1,7 +1,7 @@
 ---
 title: fun fact about null
 date: 2017-05-14 20:40:36
-categories: 前端
+categories: 前端相关
 tags:
     - JavaScript
     - ES6

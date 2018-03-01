@@ -1,7 +1,7 @@
 ---
 title: JS中的this用法小结
 date: 2017-02-11 21:40:11
-categories: 前端
+categories: 前端相关
 tags:
     - JavaScript
     - this

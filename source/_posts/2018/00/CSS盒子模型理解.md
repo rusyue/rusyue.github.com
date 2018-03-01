@@ -1,7 +1,7 @@
 ---
 title: 理解CSS盒子模型
 date: 2017-05-02 21:24:35
-categories: 前端
+categories: 前端相关
 tags:
     - 浏览器
     - 兼容

@@ -1,7 +1,7 @@
 ---
 title: ES6模块化温故知新
 date: 2017-05-29 19:25:40
-categories: 前端
+categories: 前端相关
 tags:
     - ES6
     - Module

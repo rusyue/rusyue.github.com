@@ -1,7 +1,7 @@
 ---
 title: HTML DOCTYPE 标签
 date: 2017-06-02 18:22:35
-categories: 前端
+categories: 前端相关
 tags:
     - 浏览器
     - 兼容

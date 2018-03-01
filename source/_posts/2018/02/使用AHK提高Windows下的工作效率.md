@@ -1,7 +1,7 @@
 ---
 title: 使用AHK提高Windows下的工作效率
 date: 2018-02-20 00:37:06
-categories: 工具
+categories: 野生技术
 tags:
     - AHK
     - AutoHotkey

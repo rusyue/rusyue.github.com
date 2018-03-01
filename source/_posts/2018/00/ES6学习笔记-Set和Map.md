@@ -1,7 +1,7 @@
 ---
 title: ES6学习笔记-Set和Map
 date: 2017-04-01 12:24:39
-categories: 前端
+categories: 前端相关
 tags:
     - ES6
     - JavaScript

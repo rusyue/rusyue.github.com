@@ -1,7 +1,6 @@
 ---
 title: Netease Music
 categories:
-  - 音乐
 tags:
   - 音乐
   - 随笔

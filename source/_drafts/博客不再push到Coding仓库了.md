@@ -1,8 +1,6 @@
 ---
 title: 博客不再push到Coding仓库了
 date: 2017-04-11 19:23:02
-categories:
-    - 随笔
 tags:
     - 随笔
     - Hexo

@@ -2,7 +2,7 @@
 title: Group pictures test
 date: 2018-02-11 16:40:08
 type: "picture"
-categories: 图集
+categories: 画廊图集
 tags:
     - 图集
     - 相册

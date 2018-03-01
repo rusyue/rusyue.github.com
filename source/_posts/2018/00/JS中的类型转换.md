@@ -1,7 +1,7 @@
 ---
 title: JS中的类型转换
 date: 2017-05-23 22:41:31
-categories: 前端
+categories: 前端相关
 tags:
     - JavaScript
     - 类型转换

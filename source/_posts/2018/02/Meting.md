@@ -1,7 +1,7 @@
 ---
 title: Meting & APlayer
 date: 2018-02-17 23:38:20
-categories: 随笔
+categories: 野生技术
 tags: [音乐, 游戏, 黑暗之魂, DarkSouls]
 scroll2more: false
 copyright:
@@ -9,14 +9,14 @@ copyright:
 ---
 
 <p align="center">
-<img class="img-no-bd" src="https://user-images.githubusercontent.com/2666735/30651452-58ae6c88-9deb-11e7-9e13-6beae3f6c54c.png" alt="Meting">
+<img class="no-border" src="https://user-images.githubusercontent.com/2666735/30651452-58ae6c88-9deb-11e7-9e13-6beae3f6c54c.png" alt="Meting">
 </p>
 
 <p align="center">
-<a style="display: inline-block;" href="https://i-meto.com"><img class="img-no-bd" alt="Author" src="https://img.shields.io/badge/Author-METO-blue.svg?style=flat-square"/></a>
-<a style="display: inline-block;" href="https://www.npmjs.com/package/meting"><img class="img-no-bd" alt="Version" src="https://img.shields.io/npm/v/meting.svg?style=flat-square"/></a>
-<a style="display: inline-block;" href="https://travis-ci.org/metowolf/MetingJS"><img class="img-no-bd" alt="Travis" src="https://img.shields.io/travis/metowolf/MetingJS.svg?style=flat-square"></a>
-<a style="display: inline-block;" href=""><img class="img-no-bd" alt="License" src="https://img.shields.io/npm/l/meting.svg?style=flat-square"/></a>
+<a style="display: inline-block;" href="https://i-meto.com"><img class="no-border" alt="Author" src="https://img.shields.io/badge/Author-METO-blue.svg?style=flat-square"/></a>
+<a style="display: inline-block;" href="https://www.npmjs.com/package/meting"><img class="no-border" alt="Version" src="https://img.shields.io/npm/v/meting.svg?style=flat-square"/></a>
+<a style="display: inline-block;" href="https://travis-ci.org/metowolf/MetingJS"><img class="no-border" alt="Travis" src="https://img.shields.io/travis/metowolf/MetingJS.svg?style=flat-square"></a>
+<a style="display: inline-block;" href=""><img class="no-border" alt="License" src="https://img.shields.io/npm/l/meting.svg?style=flat-square"/></a>
 </p>
 
 <!-- data-id="60198" -->
@@ -31,17 +31,16 @@ copyright:
 <!-- more -->
 
 
-# Meting
----
+## Meting
 
-## Requirement
+### Requirement
 https://github.com/MoePlayer/APlayer
 
-## CDN
+### CDN
 https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js
 https://unpkg.com/meting/dist/Meting.min.js
 
-## Quick Start
+### Quick Start
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.6.0/APlayer.min.js"></script>
 
@@ -54,7 +53,7 @@ https://unpkg.com/meting/dist/Meting.min.js
 ```
 https://music.163.com/#/playlist?id=60198
 
-## Option
+### Option
 
 |option|default|description|
 |:-----|:-------------:|:----------|
@@ -70,7 +69,7 @@ https://music.163.com/#/playlist?id=60198
 
 more https://aplayer.js.org/docs/#/?id=options
 
-## Advanced
+### Advanced
 
 Use self music API, see also https://github.com/metowolf/Meting
 
@@ -81,7 +80,7 @@ var meting_api='http://example.com/api.php?server=:server&type=:type&id=:id&r=:r
 <script src="dist/Meting.min.js"></script>
 ```
 
-## Author
+### Author
 
 **MetingJS** © [metowolf](https://github.com/metowolf), Released under the [MIT](./LICENSE) License.<br>
 
@@ -98,8 +97,7 @@ var meting_api='http://example.com/api.php?server=:server&type=:type&id=:id&r=:r
 <img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fhu01y9uy7j305k04s3yc.jpg" alt="ADPlayer" width="100">
 </p>
 
-# APlayer
----
+## APlayer
 
 > Wow, such a lovely HTML5 music player
 
@@ -111,7 +109,7 @@ var meting_api='http://example.com/api.php?server=:server&type=:type&id=:id&r=:r
 [![devDependency Status](https://img.shields.io/david/dev/MoePlayer/aplayer.svg?style=flat-square)](https://david-dm.org/MoePlayer/APlayer#info=devDependencies)
 [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?style=flat-square)](https://github.com/MoePlayer/APlayer#donate)
 
-## Introduction
+### Introduction
 
 ![image](https://i.imgur.com/JDrJXCr.png)
 
@@ -133,13 +131,13 @@ Using APlayer on your project? [Let me know!](https://github.com/MoePlayer/APlay
 
 **[Docs](http://aplayer.js.org/docs)**
 
-## Install
+### Install
 
 ```
 $ npm install aplayer --save
 ```
 
-## Quick Start
+### Quick Start
 
 ```html
 <div id="aplayer1" class="aplayer"></div>
@@ -157,22 +155,22 @@ var ap = new APlayer({
 });
 ```
 
-## Usage
+### Usage
 
 [Read the Docs](http://aplayer.js.org/docs)
 
-## CDN
+### CDN
 
 - [jsDelivr](https://www.jsdelivr.com/package/npm/aplayer)
 - [cdnjs](https://cdnjs.com/libraries/aplayer)
 - [unpkg](https://unpkg.com/aplayer/)
 
-## Join the Discussion
+### Join the Discussion
 
 - [Telegram Group](https://t.me/adplayer)
 - [QQ Group](https://shang.qq.com/wpa/qunwpa?idkey=bf22213ae0028a82e5adf3f286dfd4f01e0997dc9f1dcd8e831a0a85e799be17): 415835947
 
-## Related Projects
+### Related Projects
 
 - [APlayer-Typecho-Plugin](https://github.com/zgq354/APlayer-Typecho-Plugin)
 - [hexo-tag-aplayer](https://github.com/grzhan/hexo-tag-aplayer)
@@ -188,7 +186,7 @@ var ap = new APlayer({
 - [MetingJS](https://github.com/metowolf/MetingJS)
 - Feel free to submit yours in [`Let me know!`](https://github.com/MoePlayer/APlayer/issues/79)
 
-## Who use APlayer?
+### Who use APlayer?
 
 - [站长之家](http://www.chinaz.com/15year/index.html)
 - [TheFatRat](http://thefatrat.cn/)
@@ -202,7 +200,7 @@ var ap = new APlayer({
 - [Аэростатика](https://aerostatica.ru/)
 - Feel free to submit yours in [`Let me know!`](https://github.com/MoePlayer/APlayer/issues/79)
 
-## Donate
+### Donate
 
 - [Donate via OpenCollective](https://opencollective.com/aplayer)
 - [Donate via Paypal](https://www.paypal.me/DIYgod)
@@ -210,7 +208,7 @@ var ap = new APlayer({
 - [Donate via Alipay](https://ws4.sinaimg.cn/large/006tKfTcgy1fhu1vf4ih7j307s07sdfm.jpg)
 - Donate via Bitcoin: 13CwQLHzPYm2tewNMSJBeArbbRM5NSmCD1
 
-## Sponsor
+### Sponsor
 
 Thank you to all our sponsors!
 
@@ -226,19 +224,19 @@ Thank you to all our sponsors!
   </tbody>
 </table>
 
-## Contributors
+### Contributors
 
 This project exists thanks to all the people who contribute.
 
 <a href="https://github.com/MoePlayer/APlayer/graphs/contributors"><img src="https://opencollective.com/APlayer/contributors.svg?width=890" /></a>
 
-## Backers
+### Backers
 
 Thank you to all our backers!
 
 <a href="https://opencollective.com/APlayer#backers" target="_blank"><img src="https://opencollective.com/APlayer/backers.svg?width=890"></a>
 
-## Author
+### Author
 
 **APlayer** © [DIYgod](https://github.com/DIYgod), Released under the [MIT](./LICENSE) License.<br>
 Authored and maintained by DIYgod with help from contributors ([list](https://github.com/DIYgod/APlayer/contributors)).

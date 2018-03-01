@@ -1,6 +1,7 @@
 ---
 title: JavaScript语言核心 - 词法结构
 date: 2018-02-25 21:57:56
+categories: 前端相关
 tags:
     - JS
     - JavaScript

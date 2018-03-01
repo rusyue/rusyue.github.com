@@ -2,7 +2,7 @@
 title: Hello Vue.js
 date: 2017-02-02 00:35:50
 categories:
-    - 前端
+    - 前端相关
 tags:
     - 前端
     - 随笔
@@ -11,7 +11,7 @@ tags:
 ---
 
 <!-- 为了取消预览图片的边框所以直接用HTML插入图片 -->
-<img src="https://cn.vuejs.org/images/logo.png" alt="LOGO" class="img-no-bd">
+<img src="https://cn.vuejs.org/images/logo.png" alt="LOGO" class="no-border">
 
 Vue.js（读音 /vjuː/, 类似于 view） 是一套构建用户界面的 渐进式框架。与其他重量级框架不同的是，Vue 采用自底向上增量开发的设计。Vue 的核心库只关注视图层，并且非常容易学习，非常容易与其它库或已有项目整合。另一方面，Vue 完全有能力驱动采用单文件组件和 Vue 生态系统支持的库开发的复杂单页应用。
 

@@ -1,7 +1,7 @@
 ---
 title: ES6学习笔记-箭头函数
 date: 2017-03-03 22:21:35
-categories: 前端
+categories: 前端相关
 tags:
     - ES6
     - JavaScript
