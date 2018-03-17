@@ -12,11 +12,11 @@ copyright:
 <img class="no-border" src="https://user-images.githubusercontent.com/2666735/30651452-58ae6c88-9deb-11e7-9e13-6beae3f6c54c.png" alt="Meting">
 </p>
 
-<p align="center">
-<a style="display: inline-block;" href="https://i-meto.com"><img class="no-border" alt="Author" src="https://img.shields.io/badge/Author-METO-blue.svg?style=flat-square"/></a>
-<a style="display: inline-block;" href="https://www.npmjs.com/package/meting"><img class="no-border" alt="Version" src="https://img.shields.io/npm/v/meting.svg?style=flat-square"/></a>
-<a style="display: inline-block;" href="https://travis-ci.org/metowolf/MetingJS"><img class="no-border" alt="Travis" src="https://img.shields.io/travis/metowolf/MetingJS.svg?style=flat-square"></a>
-<a style="display: inline-block;" href=""><img class="no-border" alt="License" src="https://img.shields.io/npm/l/meting.svg?style=flat-square"/></a>
+<p class="ta-center">
+    <a href="https://img.shields.io/badge/Author-METO-blue.svg?style=flat-square" style="display: inline-block;"><img class="no-border" alt="Author" src="https://img.shields.io/badge/Author-METO-blue.svg?style=flat-square"/></a>
+    <a href="https://img.shields.io/npm/v/meting.svg?style=flat-square" style="display: inline-block;"><img class="no-border" alt="Version" src="https://img.shields.io/npm/v/meting.svg?style=flat-square"/></a>
+    <a href="https://img.shields.io/travis/metowolf/MetingJS.svg?style=flat-square" style="display: inline-block;"><img class="no-border" alt="Travis" src="https://img.shields.io/travis/metowolf/MetingJS.svg?style=flat-square"></a>
+    <a href="https://img.shields.io/npm/l/meting.svg?style=flat-square" style="display: inline-block;"><img class="no-border" alt="License" src="https://img.shields.io/npm/l/meting.svg?style=flat-square"/></a>
 </p>
 
 <!-- data-id="60198" -->

@@ -1,6 +1,5 @@
 # 个人博客
 
-[](https://rusyue.com)
 
 > Powered by [Hexo](https://hexo.io) v3.5.0
 

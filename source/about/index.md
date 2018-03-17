@@ -5,4 +5,3 @@ type: "about"
 comments: false
 ---
 
-### 爱生活，爱前端~
