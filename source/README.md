@@ -5,4 +5,4 @@
 
 > Theme [NexT.Gemini](https://github.com/theme-next/hexo-theme-next) v6.0.0
 
-> Hosted by Coding Pages & Github Pages
+> Hosted by [Coding Pages](https://pages.coding.net) & [Github Pages](https://pages.github.com)
