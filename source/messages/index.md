@@ -1,7 +1,7 @@
 ---
 title: 留言簿
 date: 2017-03-29 19:35:15
-type: "guestbook"
+type: "messages"
 notitle: true
 ---
 
