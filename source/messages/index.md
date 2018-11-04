@@ -12,8 +12,14 @@ notitle: true
     data-type="playlist">
 </div>
 
-{% cq %}
+---
+
+<p style="font-size: 1.4em; color: #666; text-align: center;">随便说点儿什么吧~ Σ( ° △ °|||)︴</p>
+
+---
+
+<!-- {% cq %}
 
 <p style="font-size: 22px;">随便说点儿什么吧~ Σ( ° △ °|||)︴</p><p class="cq-author"> ——— 可怜的老十三</p>
 
-{% endcq %}
+{% endcq %} -->
