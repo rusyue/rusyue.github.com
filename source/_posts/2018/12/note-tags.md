@@ -1,5 +1,5 @@
 ---
-title: note tags
+title: NOTE TAGS
 date: 2018-12-17 22:25:34
 categories:
 tags:

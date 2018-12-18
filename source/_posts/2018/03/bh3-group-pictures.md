@@ -1,7 +1,7 @@
 ---
 title: bh3 group pictures
 date: 2018-03-11 12:40:08
-type: "picture"
+type: picture
 categories: 画廊图集
 tags:
     - 图集
