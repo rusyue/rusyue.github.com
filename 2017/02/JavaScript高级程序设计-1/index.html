@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="google-site-verification" content="CPD6_OlAwYj541jengSGc5-N6CpNm2qFP1GSRbNkOmA">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.0.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico?v=6.0.0">
+
+
+  <link rel="mask-icon" href="/favicon.ico?v=6.0.0" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+  
+
+
+  <link rel="alternate" href="/atom.xml" title="Frozen's Notes" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="与人方便，随遇而安">
+<meta property="og:type" content="website">
+<meta property="og:title" content="分类">
+<meta property="og:url" content="https://rusyue.com/categories/index.html">
+<meta property="og:site_name" content="Frozen&#39;s Notes">
+<meta property="og:description" content="与人方便，随遇而安">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-04T11:31:51.303Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="分类">
+<meta name="twitter:description" content="与人方便，随遇而安">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.0.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://rusyue.com/categories/">
+
+
+
+
+  <title>《JavaScript高级程序设计》读书笔记（一） | Frozen's Notes</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    
+      
+        <a href="https://github.com/rusyue" class="github-corner" target="_blank" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Frozen's Notes</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">技术/思考/生活/分享</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+
+            
+              首页
+            
+
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+
+            
+              标签
+            
+
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+
+            
+              分类
+            
+
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+
+            
+              归档
+            
+
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-messages">
+          <a href="/messages/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br>
+            
+
+            
+              留言
+            
+
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://rusyue.com/2017/02/JavaScript高级程序设计-1/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Frozen">
+      <meta itemprop="description" content="技术/思考/生活/分享">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Frozen's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">《JavaScript高级程序设计》读书笔记（一）</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-18T22:11:10+08:00">2017-02-18</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/读书笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">读书笔记</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/读书笔记/技术类/" itemprop="url" rel="index">
+                    <span itemprop="name">技术类</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <span class="post-meta-item-text">评论</span>
+                <a href="/2017/02/JavaScript高级程序设计-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/02/JavaScript高级程序设计-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><span class="post-meta-item-icon"><i class="fa fa-file-o"></i> </span><span class="busuanzi-times">阅读次数</span>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">6k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">0:15</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://i.loli.net/2018/03/04/5a9bf1d7b087a.png" alt="Professional JavaScript for Web-1.png"></p>
+<hr>
+<blockquote><p>JavaScript诞生于1995年。当时，它的主要目的是处理以前由服务器端语言（如Perl）负责的一些输入验证操作。在JavaScript问世之前，必须把表单数据发送到服务器端才能确定用户是否没有填写某个必填域，是否输入了无效的值。Netscape Navigator希望通过JavaScript来解决这个问题。在人们普遍使用电话拔号上网的年代，能够在客户端完成一些基本的验证任务绝对是令人兴奋的。毕竟，拨号上网的速度之慢，导致了与服务器的每一次数据交换事实上都成了对人们耐心的一次考验。</p>
+<footer><strong>《JavaScript高级程序设计》</strong><cite>第1章　JavaScript简介</cite></footer></blockquote>
+<hr>
+<a id="more"></a>
+<h2 id="JavaScript简介"><a href="#JavaScript简介" class="headerlink" title="JavaScript简介"></a>JavaScript简介</h2><blockquote>
+<p>本章内容</p>
+</blockquote>
+<ul>
+<li>JavaScript历史回顾</li>
+<li>JavaScript是什么</li>
+<li>JavaScript与ECMAScript的关系</li>
+<li>JavaScript的不同版本</li>
+</ul>
+<h3 id="JavaScript简史"><a href="#JavaScript简史" class="headerlink" title="JavaScript简史"></a>JavaScript简史</h3><p>1997年，以JavaScript 1.1为蓝本的建议被提交给了欧洲计算机制造商协会（<code>Ecma</code>，European Computer Manufacturers Association）。该协会指定39号技术委员会（TC39，Technical Committee #39）负责“标准化一种通用、跨平台、供应商中立的脚本语言的语法和语义”。TC39由来自Netscape、Sun、微软、Borland及其他关注脚本语言发展的公司的程序员组成，他们经过数月的努力完成了<code>ECMA-262</code>——定义一种名为<code>ECMAScript</code>（发音为“ek-ma-script”）的新脚本语言的标准。第二年，ISO/IEC（International Organization for Standardization and International Electrotechnical Commission，国标标准化组织和国际电工委员会）也采用了ECMAScript作为标准（即ISO/IEC-16262）。自此以后，浏览器开发商就开始致力于将ECMAScript作为各自JavaScript实现的基础，也在不同程度上取得了成功。</p>
+<h3 id="JavaScript实现"><a href="#JavaScript实现" class="headerlink" title="JavaScript实现"></a>JavaScript实现</h3><p>虽然JavaScript和ECMAScript通常都被人们用来表达相同的含义，但JavaScript的含义却比ECMA-262中规定的要多得多。没错，一个完整的JavaScript实现应该由下列三个不同的部分组成。</p>
+<ul>
+<li>核心（<code>ECMAScript</code>）</li>
+<li>文档对象模型（<code>DOM</code>）</li>
+<li>浏览器对象模型（<code>BOM</code>）</li>
+</ul>
+<h4 id="核心（ECMAScript）"><a href="#核心（ECMAScript）" class="headerlink" title="核心（ECMAScript）"></a>核心（ECMAScript）</h4><p>由ECMA-262定义的ECMAScript与Web浏览器没有依赖关系。实际上，这门语言本身并不包含输入和输出定义。ECMA-262定义的只是这门语言的基础，而在此基础之上可以构建更完善的脚本语言。<strong>我们常见的Web浏览器只是ECMAScript实现可能的宿主环境之一</strong>。宿主环境不仅提供基本的ECMAScript实现，同时也会提供该语言的扩展，以便语言与环境之间对接交互。而这些扩展——如DOM，则利用ECMAScript的核心类型和语法提供更多更具体的功能，以便实现针对环境的操作。前面介绍过的Node以及众所周知的Adobe Flash也都是宿主环境。</p>
+<p>既然ECMA-262标准没有参照Web浏览器，那它都规定了些什么内容呢？大致说来，它规定了这门语言的下列组成部分：</p>
+<ul>
+<li>语法</li>
+<li>类型</li>
+<li>语句</li>
+<li>关键字</li>
+<li>保留字</li>
+<li>操作符</li>
+<li>对象</li>
+</ul>
+<p>ECMAScript就是对实现该标准规定的各个方面内容的语言的描述。JavaScript实现了ECMAScript，Adobe ActionScript同样也实现了ECMAScript</p>
+<h5 id="ECMAScript的版本"><a href="#ECMAScript的版本" class="headerlink" title="ECMAScript的版本"></a>ECMAScript的版本</h5><p>ECMAScript的不同版本又称为版次，以第x版表示。ECMA-262的最近一版是第5版，发布于2009年12月3日。</p>
+<h5 id="什么是ECMAScript兼容"><a href="#什么是ECMAScript兼容" class="headerlink" title="什么是ECMAScript兼容"></a>什么是ECMAScript兼容</h5><p>要想成为ECMAScript的实现，则该实现必须做到：</p>
+<ul>
+<li>支持ECMA-262描述的所有“类型、值、对象、属性、函数以及程序句法和语义”（ECMA-262第1页）；</li>
+<li>支持Unicode字符标准。</li>
+</ul>
+<p>此外，兼容的实现还可以进行下列扩展：</p>
+<ul>
+<li>添加ECMA-262没有描述的“更多类型、值、对象、属性和函数”。</li>
+<li>支持ECMA-262没有定义的“程序和正则表达式语法”。</li>
+</ul>
+<h5 id="Web浏览器对ECMAScript的支持"><a href="#Web浏览器对ECMAScript的支持" class="headerlink" title="Web浏览器对ECMAScript的支持"></a>Web浏览器对ECMAScript的支持</h5><p>到了2008年，五大主流Web浏览器（IE、Firefox、Safari、Chrome和Opera）全部做到了与ECMA-262兼容。<br>下表列出了ECMAScript受主流Web浏览器支持的情况：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">浏览器</th>
+<th style="text-align:center">ECMAScript兼容性</th>
+<th style="text-align:center">浏览器</th>
+<th style="text-align:center">ECMAScript兼容性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Netscape Navigator 2～3</td>
+<td style="text-align:center">—</td>
+<td style="text-align:center">Opera 6～7.1</td>
+<td style="text-align:center">第2版</td>
+</tr>
+<tr>
+<td style="text-align:center">Netscape Navigator 4～4.05</td>
+<td style="text-align:center">—</td>
+<td style="text-align:center">Opera 7.2+</td>
+<td style="text-align:center">第3版</td>
+</tr>
+<tr>
+<td style="text-align:center">Netscape Navigator 4.06～4.79</td>
+<td style="text-align:center">第1版</td>
+<td style="text-align:center">Safari 1～2.0.x</td>
+<td style="text-align:center">第3版*</td>
+</tr>
+<tr>
+<td style="text-align:center">Netscape 6+（Mozilla 0.6.0+）</td>
+<td style="text-align:center">第3版</td>
+<td style="text-align:center">Safari 3.x</td>
+<td style="text-align:center">第3版</td>
+</tr>
+<tr>
+<td style="text-align:center">IE3</td>
+<td style="text-align:center">—</td>
+<td style="text-align:center">Safari　4.x～5.x</td>
+<td style="text-align:center">第5版*</td>
+</tr>
+<tr>
+<td style="text-align:center">IE4</td>
+<td style="text-align:center">—</td>
+<td style="text-align:center">Chrome 1+</td>
+<td style="text-align:center">第3版</td>
+</tr>
+<tr>
+<td style="text-align:center">IE5</td>
+<td style="text-align:center">第1版</td>
+<td style="text-align:center">Firefox 1～2</td>
+<td style="text-align:center">第3版</td>
+</tr>
+<tr>
+<td style="text-align:center">IE5.5～IE7</td>
+<td style="text-align:center">第3版</td>
+<td style="text-align:center">Firefox 3.0.x</td>
+<td style="text-align:center">第3版</td>
+</tr>
+<tr>
+<td style="text-align:center">IE8</td>
+<td style="text-align:center">第5版*</td>
+<td style="text-align:center">Firefox 3.5～3.6</td>
+<td style="text-align:center">第5版*</td>
+</tr>
+<tr>
+<td style="text-align:center">IE9+</td>
+<td style="text-align:center">第5版</td>
+<td style="text-align:center">Firefox 4.0 +</td>
+<td style="text-align:center">第5版</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>* 表示不完全兼容的实现</p>
+</blockquote>
+<h4 id="文档对象模型（DOM）"><a href="#文档对象模型（DOM）" class="headerlink" title="文档对象模型（DOM）"></a>文档对象模型（DOM）</h4><p>文档对象模型（DOM，Document Object Model）是针对XML但经过扩展用于HTML的应用程序编程接口（API，Application Programming Interface）。DOM把整个页面映射为一个多层节点结构。HTML或XML页面中的每个组成部分都是某种类型的节点，这些节点又包含着不同类型的数据。看下面这个HTML页面：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Sample Page<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello World!<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>在DOM中，这个页面可以通过见图1-2所示的分层节点图表示。</p>
+<p><img src="https://i.loli.net/2018/03/01/5a96d22f7712b.png" alt="图 1-2" title="图 1-2"></p>
+<p>通过DOM创建的这个表示文档的树形图，开发人员获得了控制页面内容和结构的主动权。借助DOM提供的API，开发人员可以轻松自如地删除、添加、替换或修改任何节点。</p>
+<h5 id="为什么要使用DOM"><a href="#为什么要使用DOM" class="headerlink" title="为什么要使用DOM"></a>为什么要使用DOM</h5><p>由于Netscape和微软在开发DHTML（Dynamic HTML）方面各持己见，为了避免出现浏览器互不兼容的局面，DOM应运而生。</p>
+<h5 id="DOM级别"><a href="#DOM级别" class="headerlink" title="DOM级别"></a>DOM级别</h5><p>DOM1级由两个模块组成：DOM核心和DOM HTML。DOM核心规定的是如何映射基于XML的文档结构，以便简化对文档中任意部分的访问和操作。DOM HTML模块则在DOM核心的基础上加以扩展，添加了针对HTML的对象和方法。</p>
+<p>DOM2级引入了下列新模块：</p>
+<ul>
+<li>DOM视图：定义了跟踪不同文档视图的接口</li>
+<li>DOM事件：定义了事件和事件处理的接口</li>
+<li>DOM样式：定义了基于CSS为元素应用样式的接口</li>
+<li>DOM遍历和范围：定义了遍历和操作文档树的接口</li>
+</ul>
+<p>DOM3级引入了下列新模块，并对DOM核心进行了扩展，开始支持XML1.0规范，涉及XML Infoset、XPath和XML Base。</p>
+<ul>
+<li>DOM加载和保存模块：以统一方式加载和保存文档的方法</li>
+<li>DOM验证模块：验证文档的方法</li>
+</ul>
+<h5 id="其他DOM标准"><a href="#其他DOM标准" class="headerlink" title="其他DOM标准"></a>其他DOM标准</h5><p>除了DOM核心和DOM HTML接口之外，另外几种语言还发布了只针对自己的DOM标准。下面列出的语言都是基于XML的，每种语言的DOM标准都添加了与特定语言相关的新方法和新接口：</p>
+<ul>
+<li>SVG（Scalable Vector Graphic，可伸缩矢量图）1.0；</li>
+<li>MathML（Mathematical Markup Language，数学标记语言）1.0；</li>
+<li>SMIL（Synchronized Multimedia Integration Language，同步多媒体集成语言）。</li>
+</ul>
+<blockquote>
+<p>还有一些语言也开发了自己的DOM实现，例如Mozilla的XUL（XML User Interface Language，XML用户界面语言）。但是，只有上面列出的几种语言是W3C的推荐标准。</p>
+</blockquote>
+<h4 id="浏览器对象模型（BOM）"><a href="#浏览器对象模型（BOM）" class="headerlink" title="浏览器对象模型（BOM）"></a>浏览器对象模型（BOM）</h4><p>BOM提供与浏览器交互的方法和接口。从根本上讲，BOM只处理浏览器窗口和框架；但人们习惯把所有针对浏览器的JavaScript扩展算作BOM的一部分，比如：</p>
+<ul>
+<li>弹出新浏览器窗口的功能</li>
+<li>移动、缩放和关闭浏览器窗口的功能</li>
+<li>提供浏览器详细信息的navigator对象</li>
+<li>提供浏览器所加载页面的详细信息的location对象</li>
+<li>提供用户显示器分辨率详细信息的screen对象</li>
+<li>对cookie的支持</li>
+<li>像XMLHttpRequest和IE的ActiveXObject这样的自定义对象</li>
+</ul>
+<blockquote>
+<p>由于没有BOM标准可以遵循，因此每个浏览器都有自己的实现。虽然也存在一些事实标准，例如要有window对象和navigator对象等，但每个浏览器都会为这两个对象乃至其他对象定义自己的属性和方法。现在有了HTML5，BOM实现的细节有望朝着兼容性越来越高的方向发展。</p>
+</blockquote>
+<hr>
+<blockquote><p>只要一提到把JavaScript放到网页中，就不得不涉及Web的核心语言——HTML。在当初开发JavaScript的时候，Netscape要解决的一个重要问题就是如何做到让JavaScript既能与HTML页面共存，又不影响那些页面在其他浏览器中的呈现效果。经过尝试、纠错和争论，最终的决定就是为Web增加统一的脚本支持。而Web诞生早期的很多做法也都保留了下来，并被正式纳入HTML规范当中。</p>
+<footer><strong>《JavaScript高级程序设计》</strong><cite>第2章　在HTML中使用JavaScript</cite></footer></blockquote>
+<hr>
+<h2 id="在HTML中使用JavaScript"><a href="#在HTML中使用JavaScript" class="headerlink" title="在HTML中使用JavaScript"></a>在HTML中使用JavaScript</h2><blockquote>
+<p>本章内容</p>
+</blockquote>
+<ul>
+<li>使用&lt;script>元素</li>
+<li>嵌入脚本与外部脚本</li>
+<li>文档模式对JavaScript的影响</li>
+<li>考虑禁用JavaScript的场景</li>
+</ul>
+<h3 id="lt-script-元素"><a href="#lt-script-元素" class="headerlink" title="&lt;script>元素"></a>&lt;script>元素</h3><p>向HTML页面中插入JavaScript的主要方法，就是使用<code>&lt;script&gt;</code>元素。这个元素由Netscape创造并在Netscape Navigator 2中首先实现。</p>
+<p>HTML 4.01为<code>&lt;script&gt;</code>定义了下列6个属性。</p>
+<ul>
+<li>async：可选。表示应该立即下载脚本，但不应妨碍页面中的其他操作。</li>
+<li>charset：可选。表示通过src属性指定的代码的字符集。</li>
+<li>defer：可选。表示脚本可以延迟到文档完全被解析和显示之后再执行。</li>
+<li>language：已废弃。原来用于表示编写代码使用的脚本语言（如JavaScript、JavaScript1.2或VBScript）。</li>
+<li>src：可选。表示包含要执行代码的外部文件。</li>
+<li>type：可选。可以看成是language的替代属性；其默认值仍为text/javascript。</li>
+</ul>
+<p>关于<code>&lt;script&gt;</code>的其他要点:</p>
+<ul>
+<li>使用<code>&lt;script&gt;</code>元素的方式有两种：直接在页面中嵌入JavaScript代码和包含外部JavaScript文件。</li>
+<li>在解释器对<code>&lt;script&gt;</code>元素内部的所有代码求值完毕以前，页面中的其余内容都不会被浏览器加载或显示。</li>
+<li>带有src属性的<code>&lt;script&gt;</code>元素不应该在其<code>&lt;script&gt;</code>和<code>&lt;/script&gt;</code>标签之间再包含额外的JavaScript代码。如果包含了嵌入的代码，则只会下载并执行脚本文件，嵌入的代码会被忽略。</li>
+<li><code>&lt;script&gt;</code>元素的src属性可以是指向当前HTML页面所在域之外的某个域中的URL。</li>
+<li>相当于使用<code>defer</code>属性，把延迟脚本放在页面底部仍然是最佳选择。</li>
+</ul>
+<h3 id="嵌入代码与外部文件"><a href="#嵌入代码与外部文件" class="headerlink" title="嵌入代码与外部文件"></a>嵌入代码与外部文件</h3><p>在HTML中嵌入JavaScript代码虽然没有问题，但一般认为最好的做法还是尽可能使用外部文件来包含JavaScript代码。通常来说有如下三点理由。</p>
+<ul>
+<li>可维护性：遍及不同HTML页面的JavaScript会造成维护问题。</li>
+<li>可缓存：浏览器能够根据具体的设置缓存链接的所有外部JavaScript文件。</li>
+<li>适应未来：通过外部文件来包含JavaScript无须使用XHTML或注释hack。</li>
+</ul>
+<h3 id="文档模式"><a href="#文档模式" class="headerlink" title="文档模式"></a>文档模式</h3><p>IE5.5引入了文档模式的概念，而这个概念是通过使用文档类型（<code>doctype</code>）切换实现的。最初的两种文档模式是：混杂模式（<code>quirks mode</code>）2和标准模式（<code>standards mode</code>）。混杂模式会让IE的行为与（包含非标准特性的）IE5相同，而标准模式则让IE的行为更接近标准行为。虽然这两种模式主要影响CSS内容的呈现，但在某些情况下也会影响到JavaScript的解释执行。本书将在必要时再讨论这些因文档模式而影响JavaScript执行的情况。</p>
+<h3 id="lt-noscript-元素"><a href="#lt-noscript-元素" class="headerlink" title="&lt;noscript>元素"></a>&lt;noscript>元素</h3><p>早期浏览器都面临一个特殊的问题，即当浏览器不支持JavaScript时如何让页面平稳地退化。对这个问题的最终解决方案就是创造一个<code>&lt;noscript&gt;</code>元素，用以在不支持JavaScript的浏览器中显示替代的内容。这个元素可以包含能够出现在文档<body>中的任何HTML元素——<code>&lt;script&gt;</code>元素除外。包含在<code>&lt;noscript&gt;</code>元素中的内容只有在下列情况下才会显示出来：<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"left","width":90,"height":240,"superSample":2,"hOffset":0,"vOffset":-145},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":1,"opacityOnHover":1},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></p>
+<ul>
+<li>浏览器不支持脚本。</li>
+<li>浏览器支持脚本，但脚本被禁用。</li>
+</ul>
+<p>符合上述任何一个条件，浏览器都会显示<code>&lt;noscript&gt;</code>中的内容。而在除此之外的其他情况下，浏览器不会呈现<code>&lt;noscript&gt;</code>中的内容。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Frozen
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://rusyue.com/2017/02/JavaScript高级程序设计-1/" title="《JavaScript高级程序设计》读书笔记（一）">https://rusyue.com/2017/02/JavaScript高级程序设计-1/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JS/" rel="tag"># JS</a>
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+            <a href="/tags/读书笔记/" rel="tag"># 读书笔记</a>
+          
+            <a href="/tags/JavaScript高级程序设计/" rel="tag"># JavaScript高级程序设计</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/JS中的this用法小结/" rel="next" title="JS中的this用法小结">
+                <i class="fa fa-chevron-left"></i> JS中的this用法小结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/解忧杂货店/" rel="prev" title="我从未读过这样的小说 ——《解忧杂货店》">
+                我从未读过这样的小说 ——《解忧杂货店》 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Frozen">
+            
+              <p class="site-author-name" itemprop="name">Frozen</p>
+              <p class="site-description motion-element" itemprop="description">技术/思考/生活/分享</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">29</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                  <a href="/categories/">
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                  <a href="/tags/">
+                    <span class="site-state-item-count">72</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/rusyue" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i></a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://coding.net/u/rusyue" target="_blank" title="Coding">
+                      
+                        <i class="fa fa-fw fa-github-alt"></i></a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://resume.rusyue.com" target="_blank" title="Resume">
+                      
+                        <i class="fa fa-fw fa-comments"></i></a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:me@rusyue.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i></a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+                <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons">
+              </a>
+            </div>
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript简介"><span class="nav-number">1.</span> <span class="nav-text">JavaScript简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript简史"><span class="nav-number">1.1.</span> <span class="nav-text">JavaScript简史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JavaScript实现"><span class="nav-number">1.2.</span> <span class="nav-text">JavaScript实现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#核心（ECMAScript）"><span class="nav-number">1.2.1.</span> <span class="nav-text">核心（ECMAScript）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#ECMAScript的版本"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">ECMAScript的版本</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#什么是ECMAScript兼容"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">什么是ECMAScript兼容</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Web浏览器对ECMAScript的支持"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">Web浏览器对ECMAScript的支持</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文档对象模型（DOM）"><span class="nav-number">1.2.2.</span> <span class="nav-text">文档对象模型（DOM）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#为什么要使用DOM"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">为什么要使用DOM</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#DOM级别"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">DOM级别</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他DOM标准"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">其他DOM标准</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浏览器对象模型（BOM）"><span class="nav-number">1.2.3.</span> <span class="nav-text">浏览器对象模型（BOM）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在HTML中使用JavaScript"><span class="nav-number">2.</span> <span class="nav-text">在HTML中使用JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-script-元素"><span class="nav-number">2.1.</span> <span class="nav-text">&lt;script&gt;元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#嵌入代码与外部文件"><span class="nav-number">2.2.</span> <span class="nav-text">嵌入代码与外部文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文档模式"><span class="nav-number">2.3.</span> <span class="nav-text">文档模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-noscript-元素"><span class="nav-number">2.4.</span> <span class="nav-text">&lt;noscript&gt;元素</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright busuanzi-count">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Frozen</span>
+
+  
+    <span class="post-meta-divider busuanzi-insert">|</span>
+    <span class="post-meta-item-icon busuanzi-insert">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span class="busuanzi-insert" title="站点总字数">92k</span>
+  
+
+  
+    <span class="post-meta-divider busuanzi-insert">|</span>
+    <span class="post-meta-item-icon busuanzi-insert">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span class="busuanzi-insert" title="站点总阅读时长">3:50</span>
+  
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+    <span class="post-meta-divider busuanzi-insert">|</span>
+    <span class="post-meta-item-icon busuanzi-insert">
+      <i class="fa fa-users"></i>
+    </span>
+    <span class="site-uv busuanzi-insert">
+      
+      <span class="busuanzi-value" id="busuanzi_value_site_uv" title="站点总到访人次"></span>
+      
+    </span>
+    <span class="post-meta-divider busuanzi-insert">|</span>
+    <span class="post-meta-item-icon busuanzi-insert">
+      <i class="fa fa-file"></i>
+    </span>
+    <span class="site-pv busuanzi-insert">
+      
+      <span class="busuanzi-value" id="busuanzi_value_site_pv" title="站点总阅读次数"></span>
+      
+    </span>
+  
+
+</div>
+
+
+
+
+
+
+
+
+  <div class="footer-custom">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a><span class="post-meta-divider">|</span>Theme <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.0.0<span class="busuanzi-insert"><span class="post-meta-divider">|</span>Hosted by <a href="https://pages.coding.me">Coding Pages</a> &amp; <a href="https://pages.github.com">Github Pages</a><span></span></span></div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.min.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.0"></script>
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="/lib/valine/av-min.js?v=6.0.0"></script>
+  <script type="text/javascript" src="/lib/valine/valine@1.3.0.min.js?v=6.0.0"></script>
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    var tips = [
+      '随便说点儿什么吧~ Σ( ° △ °|||)︴',
+      '留下邮箱可以收到回复提醒哦~ ( ˘•ω•˘ )◞⁽˙³˙⁾ ',
+      '来啊，快活啊! ヾﾉ≧∀≦)o',
+      '按下Ctrl+Enter就能直接提交回复啦~ (๑•̀ㅂ•́)و✧'
+    ];
+
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+
+    new Valine({
+        el: '#comments',
+        verify: false,
+        notify: false,
+        appId: 'gUq3s4XsDLdaLkmlYNMq8Qgi-gzGzoHsz',
+        appKey: 'iB8eP9asnx8nd9HW4vXVLNH5',
+        avatar: 'retro',
+        guest_info: guest,
+        placeholder: tips[Math.floor(Math.random() * tips.length)],
+        lang: 'zh-cn',
+        pageSize: '10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/lib/clipboardjs/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/src/zclip.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"left","width":90,"height":240,"superSample":2,"hOffset":0,"vOffset":-145},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":1,"opacityOnHover":1},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
