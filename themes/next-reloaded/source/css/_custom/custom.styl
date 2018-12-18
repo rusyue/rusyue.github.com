@@ -1,0 +1,253 @@
+@import "fonts"
+
+// Gitment按钮样式微调
+.gitment-editor-submit,
+.gitment-comments-init-btn {
+  color: #fff;
+  background-color: #222 !important;
+  transition: background-color 0.3s ease-in;
+}
+
+.gitment-editor-submit:hover,
+.gitment-comments-init-btn:hover {
+  background-color: #333 !important;
+}
+
+.gitment-comments-init-btn:disabled,
+.gitment-editor-submit:disabled {
+  color: rgba(255,255,255,0.85) !important;
+  background-color: #555 !important;
+}
+
+.gitment-editor-login {
+    color: #666;
+}
+.gitment-root-container > div:last-child {
+    display: none;
+}
+
+
+// 不蒜子统计
+.site-uv .busuanzi-value,
+.site-pv .busuanzi-value,
+.page-pv .busuanzi-value { margin: 0; }
+.site-uv { margin: 0; }
+.site-uv::after { content: ""; padding-left: 0; font-size: 0; display: block; width: 0; height: 0; }
+
+// 小屏时隐藏post-meta里的"阅读次数"文本
+@media (max-width: 991px) {
+  .page-pv .post-meta-item-icon+span.busuanzi-times {
+    display: none;
+  }
+}
+
+// 小屏时精简footer
+@media (max-width: 664px) {
+  .busuanzi-insert {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1230px) {
+  .busuanzi-insert {
+    display: none;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container .footer-inner {
+    width: 75%;
+  }
+}
+
+// 修正小屏时valine评论区上边距
+@media (max-width: 767px) {
+  #comments.comments.v .vwrap {
+    top: 10px;
+    color: red;
+  }
+}
+
+// 留言板样式
+#comments.comments.v div.info { display: none !important; }
+#comments.comments.v .vbtn { border-radius: 3px; }
+#comments.comments.v .vbtn:hover { color: #d7191acc; border-color: #d7191acc; }
+#comments.comments.v .vlist .vcard .vh .vmeta .vat { color: #dd4b39; }
+#comments.comments.v .vlist .vcard .vhead .vnick { color: #555; }
+#comments.comments.v .vlist .vcard .vhead .vnick:hover { color: #d7191a; }
+#comments.comments.v .vwrap { padding-top: 2px; }
+
+#comments.comments.v .vimg {
+  transition: transform .6s ease;
+  border: none;
+  padding: 0;
+}
+
+#comments.comments.v .vpreview,
+#comments.comments.v .vemojis {
+  border-top: 1px dashed #dedede;
+}
+
+#comments.comments.v .vpreview {
+  font-size: 0.95em;
+}
+
+#comments.comments.v .vlist .vcard .vquote {
+  border-left: 1px dashed #dededecc;
+}
+
+#comments.comments.v .vcontent img {
+  margin-left: 0;
+}
+
+#comments.comments.v code,
+#comments.comments.v pre {
+  font-family: Consolas,Source Code Pro,courier new,Input Mono,PT Mono,SFMono-Regular,Monaco,Menlo,PingFang SC,Liberation Mono,Microsoft YaHei,Courier,monospace;
+  font-size: 0.95em;
+}
+
+#comments.comments.v .vimg:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+#comments.comments.v .vcontent { margin-top: 2px; }
+#comments.comments.v .vcontent.expand { width: 100%; }
+#comments.comments.v .vcontent.expand::after { content: "\5C55\5F00\56DE\590D"; } // content: "展开回复"
+#comments.comments.v .vempty::after {
+  content: "\30FE\FF89\2267\2200\2266\29o";
+}
+
+// pace
+// .pace-progress {
+  // background: #cb4042 !important;
+// }
+
+// APlayer样式
+.aplayer {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09) !important;
+  border-radius: 0 !important;
+}
+
+.aplayer-played {
+  background: rgb(221, 75, 57) none repeat scroll 0% 0% !important;
+}
+
+.aplayer-pic {
+  background-color: #b9514d !important;
+}
+
+.aplayer-thumb,
+.aplayer-list-cur {
+  background-color: #dd4b39 !important;
+}
+
+// 侧栏底色透明
+// .sidebar { background: transparent; }
+
+// 处理连续图片下的br
+a.fancybox + br {
+  height: 0;
+  font-size: 0;
+  display: none;
+}
+
+// 自定义类名
+.no-border {
+    border: none !important;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+// 居中块引用
+.cq-author {
+  text-align: right !important;
+  font-style: italic;
+  padding-right: 4em;
+  color: #999;
+}
+
+// LOGO
+.site-title {
+  font-family: "Uncial Antiqua","Lato","PingFang SC","Microsoft YaHei",sans-serif;
+  font-weight: 700;
+}
+
+.site-author-name {
+  font-family: "Cinzel";
+}
+
+// footer 字体
+.footer-inner,
+.copyright span {
+  font-family: "Cinzel","Constantia";
+}
+
+
+// 取消标题的下边框，需要时手动用hr代替
+.post-body {
+  h1, h2, h3, h4, h5, h6 {
+    // border-bottom: 0px solid #eee;
+    +hr {
+      margin-top: 12px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// 自定义背景图
+body {
+  background-image: url(../images/main-bg-2.png);
+}
+
+/**
+body::before {
+  content: "\200b";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(../images/main-bg-2.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: 16%;
+  z-index: -3;
+  transform: scale(1.06);
+  filter: blur(3px);
+  opacity: 0.95;
+}
+**/
+
+body::after {
+  content: "\200b";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(238, 238, 238, 0.2);
+  z-index: -2;
+}
+
+// 单行代码样式
+code {
+  // background: rgba(27, 31, 35, 0.1);
+  background: rgba(159, 53, 58, 0.08);
+  color: #CB4042;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.post-body .label {
+  &.default,
+  &.primary,
+  &.success,
+  &.warning,
+  &.danger,
+  &.info {
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+}

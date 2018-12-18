@@ -1,0 +1,42 @@
+.post-block .post-body .group-picture,
+.post .post-body .group-picture {
+  img {
+    box-sizing: border-box;
+    padding: 0 3px;
+    border: none;
+  }
+}
+
+.post-block .group-picture-row,
+.post .group-picture-row {
+  overflow: hidden;
+  margin-top: 6px;
+  &:first-child { margin-top: 0; }
+}
+
+.post-block .group-picture-column,
+.post .group-picture-column {
+  float: left;
+}
+
+.post-block .post-body .group-picture-column,
+.posts-expand .post-body .group-picture-column,
+.page-post-detail .post-body .group-picture-column {
+  // float: none;
+  margin-top: 8px;
+  // width: auto !important;
+  img { margin: 0 auto !important; }
+}
+
+.page-archive {
+  .group-picture-container { overflow: hidden; }
+  .group-picture-row {
+    float: left;
+    &:first-child { margin-top: 6px; }
+  }
+
+  .group-picture-column {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
