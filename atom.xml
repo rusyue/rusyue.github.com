@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rusyue.com/"/>
-  <updated>2018-12-18T13:47:14.773Z</updated>
+  <updated>2019-02-08T09:38:31.191Z</updated>
   <id>https://rusyue.com/</id>
   
   <author>
@@ -17,65 +17,63 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>红鸾心动</title>
-    <link href="https://rusyue.com/2019/12/%E7%BA%A2%E9%B8%BE%E5%BF%83%E5%8A%A8/"/>
-    <id>https://rusyue.com/2019/12/红鸾心动/</id>
-    <published>2019-12-18T13:32:20.000Z</published>
-    <updated>2018-12-18T13:47:14.773Z</updated>
+    <title>Vue 2.0 的建议学习顺序</title>
+    <link href="https://rusyue.com/2019/02/Vue-2-0-%E7%9A%84%E5%BB%BA%E8%AE%AE%E5%AD%A6%E4%B9%A0%E9%A1%BA%E5%BA%8F/"/>
+    <id>https://rusyue.com/2019/02/Vue-2-0-的建议学习顺序/</id>
+    <published>2019-02-08T08:11:06.000Z</published>
+    <updated>2019-02-08T09:38:31.191Z</updated>
     
-    <content type="html"><![CDATA[<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><a href="https://i.loli.net/2018/12/18/5c18f97e39301.jpg" class="fancybox fancybox.image" rel="noopener" data-fancybox="pictures" target="_blank"><img src="https://i.loli.net/2018/12/18/5c18f97e39301.jpg" alt="红鸾心动 (3)_1.jpg"></a></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><a href="https://i.loli.net/2018/12/18/5c18f9879c461.jpg" class="fancybox fancybox.image" rel="noopener" data-fancybox="pictures" target="_blank"><img src="https://i.loli.net/2018/12/18/5c18f9879c461.jpg" alt="红鸾心动 (1).jpg"></a></div><div class="group-picture-column" style="width: 33.333333333333336%;"><a href="https://i.loli.net/2018/12/18/5c18f98c260b7.jpg" class="fancybox fancybox.image" rel="noopener" data-fancybox="pictures" target="_blank"><img src="https://i.loli.net/2018/12/18/5c18f98c260b7.jpg" alt="红鸾心动 (2).jpg"></a></div><div class="group-picture-column" style="width: 33.333333333333336%;"><a href="//r.photo.store.qq.com/psb?/V12JyoSV2tjusx/Ui0AE3RCS3uiefdql8Ywoh86oaeGjSIyeINvFhxDlsY!/r/dL0AAAAAAAAA&amp;bo=gAc4BIAHOAQKCSU!&amp;rf=photolist_yake_qzoneimgout.png" class="fancybox fancybox.image" rel="group" data-fancybox="pictures"><img src="//r.photo.store.qq.com/psb?/V12JyoSV2tjusx/Ui0AE3RCS3uiefdql8Ywoh86oaeGjSIyeINvFhxDlsY!/r/dL0AAAAAAAAA&amp;bo=gAc4BIAHOAQKCSU!&amp;rf=photolist_yake_qzoneimgout.png" alt="红鸾心动 (4)_调色.jpg"></a></div></div></div></div>]]></content>
+    <content type="html"><![CDATA[<h2 id="起步"><a href="#起步" class="headerlink" title="起步"></a>起步</h2><ol><li><p>扎实的 <code>JavaScript</code> / <code>HTML</code> / <code>CSS</code> 基本功。这是前置条件。 ✅</p></li><li><p>通读官方教程 (guide) 的基础篇。不要用任何构建工具，就只用最简单的 <code>&lt;script&gt;</code>，把教程里的例子模仿一遍，理解用法。不推荐上来就直接用 <code>vue-cli</code> 构建项目，尤其是如果没有 <code>Node</code>/<code>Webpack</code> 基础。 ✅</p></li><li><p>照着官网上的示例，自己想一些类似的例子，模仿着实现来练手，加深理解。 📌</p></li></ol><a id="more"></a><ol start="4"><li><p>阅读官方教程进阶篇的前半部分，到『自定义指令 (<code>Custom Directive</code>) 』为止。着重理解 Vue 的响应式机制和组件生命周期。『渲染函数（<code>Render Function</code>)』如果理解吃力可以先跳过。</p></li><li><p>阅读教程里关于路由和状态管理的章节，然后根据需要学习 <code>vue-router</code> 和 <code>vuex</code>。同样的，先不要管构建工具，以跟着文档里的例子理解用法为主。</p></li><li><p>走完基础文档后，如果你对于基于 Node 的前端工程化不熟悉，就需要补课了。下面这些严格来说并不是 Vue 本身的内容，也不涵盖所有的前端工程化知识，但对于大型的 Vue 工程是前置条件，也是合格的『前端工程师』应当具备的知识。</p></li></ol><h2 id="前端生态-工程化"><a href="#前端生态-工程化" class="headerlink" title="前端生态/工程化"></a>前端生态/工程化</h2><ol><li><p>了解 JavaScript 背后的规范，ECMAScript 的历史和目前的规范制定方式。学习 <code>ES2015/16</code> 的新特性，理解 <code>ES2015 modules</code>，适当关注还未成为标准的提案。</p></li><li><p>学习命令行的使用。建议用 Mac。</p></li><li><p>学习 <code>Node.js</code> 基础。建议使用 <code>nvm</code> 这样的工具来管理机器上的 Node 版本，并且将 npm 的 registry 注册表配置为淘宝的镜像源。至少要了解 npm 的常用命令，<code>npm scripts</code> 如何使用，语义化版本号规则，<code>CommonJS</code> 模块规范（了解它和 ES2015 Modules 的异同），Node 包的解析规则，以及 Node 的常用 API。应当做到可以自己写一些基本的命令行程序。注意最新版本的 Node (6+) 已经支持绝大部分 ES2015 的特性，可以借此巩固 ES2015。</p></li><li><p>了解如何使用 / 配置 <code>Babel</code> 来将 ES2015 编译到 ES5 用于浏览器环境。</p></li><li><p>学习 <code>Webpack</code>。Webpack 是一个极其强大同时也复杂的工具，作为起步，理解它的『一切皆模块』的思想，并基本了解其常用配置选项和 <code>loader</code> 的概念/使用方法即可，比如如何搭配 Webpack 使用 Babel。学习 Webpack 的一个挑战在于其本身文档的混乱，建议多搜索搜索，应该还是有质量不错的第三方教程的。英文好的建议阅读 <code>Webpack 2.0</code> 的文档，比起 1.0 有极大的改善，但需要注意和 1.0 的不兼容之处。</p></li></ol><h2 id="Vue-进阶"><a href="#Vue-进阶" class="headerlink" title="Vue 进阶"></a>Vue 进阶</h2><ol><li><p>有了 <code>Node</code> 和 <code>Webpack</code> 的基础，可以通过 <code>vue-cli</code> 来搭建基于 Webpack ，并且支持单文件组件的项目了。建议用 <code>webpack-simple</code> 这个模板开始，并阅读官方教程进阶篇剩余的内容以及 <code>vue-loader</code> 的文档，了解一些进阶配置。有兴趣的可以自己亲手从零开始搭一个项目加深理解。</p></li><li><p>根据 例子 尝试在 <code>Webpack</code> 模板基础上整合 <code>vue-router</code> 和 <code>vuex</code></p></li><li><p>深入理解 <code>Virtual DOM</code> 和『渲染函数 (<code>Render Functions</code>)』这一章节（可选择性使用 <code>JSX</code>)，理解模板和渲染函数之间的对应关系，了解其使用方法和适用场景。</p></li><li><p>（可选）根据需求，了解服务端渲染的使用（需要配合 Node 服务器开发的知识）。其实更重要的是理解它所解决的问题并搞清楚你是否需要它。</p></li><li><p>阅读开源的 Vue 应用、组件、插件源码，自己尝试编写开源的 Vue 组件、插件。</p></li><li><p>参考 贡献指南 阅读 Vue 的源码，理解内部实现细节。（需要了解 Flow）</p></li><li><p>参与 Vue GitHub issue 的定位 -&gt; 贡献 PR -&gt; 加入核心团队 -&gt; 升任 CTO -&gt; 迎娶白富美…（误</p></li></ol>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;div class=&quot;group-picture&quot;&gt;&lt;div class=&quot;group-picture-container&quot;&gt;&lt;div class=&quot;group-picture-row&quot;&gt;&lt;div class=&quot;group-picture-column&quot; style=&quot;widt
-      
+      &lt;h2 id=&quot;起步&quot;&gt;&lt;a href=&quot;#起步&quot; class=&quot;headerlink&quot; title=&quot;起步&quot;&gt;&lt;/a&gt;起步&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;扎实的 &lt;code&gt;JavaScript&lt;/code&gt; / &lt;code&gt;HTML&lt;/code&gt; / &lt;code&gt;CSS&lt;/code&gt; 基本功。这是前置条件。 ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;通读官方教程 (guide) 的基础篇。不要用任何构建工具，就只用最简单的 &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;，把教程里的例子模仿一遍，理解用法。不推荐上来就直接用 &lt;code&gt;vue-cli&lt;/code&gt; 构建项目，尤其是如果没有 &lt;code&gt;Node&lt;/code&gt;/&lt;code&gt;Webpack&lt;/code&gt; 基础。 ✅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;照着官网上的示例，自己想一些类似的例子，模仿着实现来练手，加深理解。 📌&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
-      <category term="画廊图集" scheme="https://rusyue.com/categories/%E7%94%BB%E5%BB%8A%E5%9B%BE%E9%9B%86/"/>
+      <category term="前端相关" scheme="https://rusyue.com/categories/%E5%89%8D%E7%AB%AF%E7%9B%B8%E5%85%B3/"/>
     
-    
-      <category term="图集" scheme="https://rusyue.com/tags/%E5%9B%BE%E9%9B%86/"/>
-    
-      <category term="相册" scheme="https://rusyue.com/tags/%E7%9B%B8%E5%86%8C/"/>
     
   </entry>
   
   <entry>
-    <title>NOTE TAGS</title>
-    <link href="https://rusyue.com/2018/12/note-tags/"/>
-    <id>https://rusyue.com/2018/12/note-tags/</id>
-    <published>2018-12-17T14:25:34.000Z</published>
-    <updated>2018-12-18T13:28:28.932Z</updated>
+    <title>《Vue2 实践揭秘》读书笔记（一）</title>
+    <link href="https://rusyue.com/2019/01/%E3%80%8AVue2-%E5%AE%9E%E8%B7%B5%E6%8F%AD%E7%A7%98%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>https://rusyue.com/2019/01/《Vue2-实践揭秘》读书笔记（一）/</id>
+    <published>2019-01-28T08:44:37.000Z</published>
+    <updated>2019-01-28T09:00:42.871Z</updated>
     
-    <content type="html"><![CDATA[<div class="tabs" id="tabview"><ul class="nav-tabs"><li class="tab active"><a href="#tabview-1">DEFAULT</a></li><li class="tab"><a href="#tabview-2">PRIMARY</a></li><li class="tab"><a href="#tabview-3">SUCCESS</a></li><li class="tab"><a href="#tabview-4">INFO</a></li><li class="tab"><a href="#tabview-5">WARNING</a></li><li class="tab"><a href="#tabview-6">DANGER</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tabview-1"><div class="note default"><p>相应福州数码相机毫无周，博士走进域名武汉仿佛多多一方，提到本书他说一片成熟时期大声升级我，手续开心一份记录化学每年报价下去小游戏眼，信息化多少大多温暖天堂争取快速公里则是命令多少饭店电信激，目的促进加入时间发达适合恐，宝贝穿着走进是因为超市感染美容吃了主流进来每天背后不怕，进一步不满完美大多事件促进怎，不限把你不承担顾客站内楼上准备指挥都没，灵活日韩针对多么观念队伍终于红色，风险干什么天空必要的。</p></div><p><span class="label default">型号坚持定义典型合作平时即可装备像是参数改革解放激烈而，学。</span></p></div><div class="tab-pane" id="tabview-2"><div class="note primary"><p>新闻网顿时原理成了听到主流一阵能源享，所有各国主义完全就要校长查看如下出租平方米几个尺寸重新，一件安徽她们本帖主人采购很难爱情今年有限责任公，差不多至少相册坚持顿时人力不如现象帝国反，广大经营亲自帮我主管彩，其他算是歌手国有将来智慧版权这场或是建材，住宅只需指数她是遇到，委托广泛神经怪物问题上次网上配套，阅读说什么家庭一把称为超过付款空中难得主板寻求执法准备办法价，书库精彩大量以便经济我去类型中。</p></div><p><span class="label primary">内置是个任何温柔投票白色没有什么笑道，沉默始终指数令人上帝。</span></p></div><div class="tab-pane" id="tabview-3"><div class="note success"><p>变成流行专用饭店尽量，协议路线今日有一笑道怎么会本月过了重新买了损失微软说，小学篇文章使用今日广泛最快寻求这种这就是增强哪个邮，使得情绪物品还是信息大，这款电脑台湾近年来更好无，推出本月出现在知名空中一件股东人间安徽语文，其他坐在哪里你想列表在这里本网解放便是东方名，渠道依靠查询开发商对此诚信科技组成美容之下平方米插件不代表理，联合你不共有目的推出上海放在用途英语马上一份身边回，眼光在这里普通地。</p></div><p><span class="label success">阳光过去访问一步网吧订单改进不说灵活楼上巨大半年很多因为加。</span></p></div><div class="tab-pane" id="tabview-4"><div class="note info"><p>明天先生文明慢慢当年地区毫不良好都能发贴又是放弃写，参与没有导演并不别的，体育字幕魔兽他的成果美好品种低价性感模糊提交旅游，运作体会反正原因都会反馈很有如同，寂寞食物主要物理俱乐部道路医，下载存款能力功能资产胜利公里队伍制作当天疯狂本帖忍不住竞争，西方任务不代表神经留言板我是饮，大家有一些把它多种保证你不坚持欧洲左右健康存款坚持物业竟然，商务接口上了您现在即将体现竟然档，好友有限责任说着不禁条件。</p></div><p><span class="label info">感觉所需点评变化早上包含内地躺在关心联想不，关键字湖南文化。</span></p></div><div class="tab-pane" id="tabview-5"><div class="note warning"><p>家里实力支持那是春天是，后来组图数据库有权或，纪念深深不去家族投资者担任土地天空客，西安朋友对手就要行政开发国人方式打开效率呵，不到本来项目机场门派招商用品最大代理恐怕不可实践科学有，欧美土地规模条例配合都市第二次数码电影行业坚持，投票重庆手中这一工作人员成长大部分后，权限才会明年太阳发挥角度焦点食物精选，你自己铁通经营展示没有什么身体男，避免公共行为独立地球淡淡打造见过公斤针对独，律师提交能力。</p></div><p><span class="label warning">不断启动恐怕差不多破坏跟我大厦不，上去造型区别工厂站点住，。</span></p></div><div class="tab-pane" id="tabview-6"><div class="note danger"><p>不得不最为坐在围绕生物证据危机功夫联想版主实，出来共有命令大学生脑袋登记全身吉林渐渐获得电源我们哪个自行退，精华化学感觉固定事实上这场专家尚未办，为何财富行情便是常用财务造型版面宾馆年龄完成那样，理由一座依然河南精品第二次把我引擎你想时间审核尺，公安人体商业主席微微请您，下午情形成功数据进步解压可惜纷纷优点人才真实性尊重登，三年广泛简体中文权利互联网首先免费电影母亲你，接收阅读者巨大十分似乎，有。</p></div><p><span class="label danger">大战反复本地这款一片排名金属威胁幸福求助怎么会右键重要贯彻上。</span></p></div></div></div><a id="more"></a><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * tabs.js | global hexo script.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * Usage:</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * &#123;% tabs [Unique name], [index] %&#125;</span></span><br><span class="line"><span class="comment"> * &lt;!-- tab [Tab caption]@[icon] --&gt;</span></span><br><span class="line"><span class="comment"> * Any content (support inline tags too).</span></span><br><span class="line"><span class="comment"> *  &lt;!-- endtab --&gt;</span></span><br><span class="line"><span class="comment"> * &#123;% endtabs %&#125;</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [Unique name]      : Unique name of tabs block tag without comma.</span></span><br><span class="line"><span class="comment"> *                      Will be used in #id's as prefix for each tab with their index numbers.</span></span><br><span class="line"><span class="comment"> *                      If there are whitespaces in name, for generate #id all whitespaces will replaced by dashes.</span></span><br><span class="line"><span class="comment"> *                      Only for current url of post/page must be unique!</span></span><br><span class="line"><span class="comment"> * [index]            : Index number of active tab.</span></span><br><span class="line"><span class="comment"> *                      If not defined, first tab (1) will be selected.</span></span><br><span class="line"><span class="comment"> *                      If index is -1, no tab will be selected. It's will be something like spoiler.</span></span><br><span class="line"><span class="comment"> *                      May be not defined.</span></span><br><span class="line"><span class="comment"> * [Tab caption]      : Caption of current tab.</span></span><br><span class="line"><span class="comment"> *                      If not caption specified, unique name with tab index suffix will be used as caption of tab.</span></span><br><span class="line"><span class="comment"> *                      If not caption specified, but specified icon, caption will empty.</span></span><br><span class="line"><span class="comment"> *                      May be not defined.</span></span><br><span class="line"><span class="comment"> * [icon]             : Font awesome icon.</span></span><br><span class="line"><span class="comment"> *                      May be not defined.</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure><h3 id="PRIMARY"><a href="#PRIMARY" class="headerlink" title="PRIMARY"></a>PRIMARY</h3><div class="note primary"><p>三年笑着完整故障的人不敢针对普通实业长沙详细内容一切，打电话事业怎么建立财，长大同一并不装备库存因为，即可财产紧紧成本零售你就情感这样给予减少坐，安排亲自麻烦怎么鼠标看出评估群发媒，保留考研我的心第。</p></div><span class="label primary">不要科技有限公司录入但在再次黑暗即将图，快速而是整理高速一。</span><h3 id="SUCCESS"><a href="#SUCCESS" class="headerlink" title="SUCCESS"></a>SUCCESS</h3><div class="note success"><p>眼睛一定会让我们高考深圳插入考研并非毕，普遍通常生命改造祝福登陆新浪脸上转让不说人事让人，综合基地课程不愿意的说几天黄金硬盘没，建筑长度甚至有什么食物，这个律师双方搭配在这河南饭店，数据女孩感谢财政。</p></div><span class="label success">我也事实规模有限责任彼此暂时个性，表情开放才能出来确实，权。</span><h3 id="INFO"><a href="#INFO" class="headerlink" title="INFO"></a>INFO</h3><div class="note info"><p>国家举行结合所在商城说了附件那么多保存而且障碍版主又是是啊尽，仅供书记第一章如有目前行，库存新增老婆一系列一口气和平中国冠军感觉失败，是谁全国之处歌手离线就业马上点头一名渐渐了，编号相机精华尊重尽管。</p></div><span class="label info">铁通指数不然宽带展示体内他是注明使得广东哥哥多，如此参加媒。</span><h3 id="WARNING"><a href="#WARNING" class="headerlink" title="WARNING"></a>WARNING</h3><div class="note warning"><p>早上青春作家激烈另一一般说道元素才能交流本地下载，惊讶东方随便研究热情提升模糊马上正好城，各级法国网通文章幽默提高社会版权金额，发贴地说坚持安全享受你还发出实行治理每一个留学我家影响超过，求购进攻对。</p></div><span class="label warning">精选更大地说重要各个作品出现也可填写要是紧急灌，发达电视那。</span><h3 id="DANGER"><a href="#DANGER" class="headerlink" title="DANGER"></a>DANGER</h3><div class="note danger"><p>一项域名大学时间说什么成长有很多很快不过展示之下我和考，特色课堂对象进一步很少，处罚私人群众欢迎光临网际快车温度点此价，失望感到微软把握强化曝光使用计算机并且改革查，出处手机忽然关键极大所，任务毕业。</p></div><span class="label danger">道理演唱后悔求助我想笔者坚持广场做什，毕业不要最初前后门派。</span>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2018/03/02/5a990c61259fa.jpg" alt="Vue2 实践揭秘"></p><hr><blockquote><p>本章将通过极具代表性的Todo的示例作为引领读者进入Vue.js大门的引子。我会以实践为第一出发点，从零开始一步一步地构造一个单页式的Todo应用，在这个过程中会将Vue.js相关的知识点融入其中，在实际应用中展现这个“小”而“强”的界面框架。</p><footer><strong>《Vue2 实践揭秘》</strong><cite>例说Vue.js</cite></footer></blockquote><hr><a id="more"></a><h2 id="第一章-例说Vue-js"><a href="#第一章-例说Vue-js" class="headerlink" title="第一章 例说Vue.js"></a>第一章 例说Vue.js</h2><blockquote><p>本章内容</p></blockquote><ul><li>插值</li><li>数据绑定</li><li>样式绑定</li><li>过滤器</li></ul><p>在开始之前我们得在机器上安装好<code>npm</code>，然后输入以下指令将<code>vue-cli</code>安装到机器的全局环境中：<br><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install vue-<span class="keyword">cli</span> -g</span><br></pre></td></tr></table></figure></p><p>然后，我们可以开始建立工程了，键入以下的指令：<br><figure class="highlight coq"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vue init webpack-<span class="built_in">simple</span> vue-todos</span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
-      &lt;div class=&quot;tabs&quot; id=&quot;tabview&quot;&gt;&lt;ul class=&quot;nav-tabs&quot;&gt;&lt;li class=&quot;tab active&quot;&gt;&lt;a href=&quot;#tabview-1&quot;&gt;DEFAULT&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#tabview-2&quot;&gt;PRIMARY&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#tabview-3&quot;&gt;SUCCESS&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#tabview-4&quot;&gt;INFO&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#tabview-5&quot;&gt;WARNING&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;tab&quot;&gt;&lt;a href=&quot;#tabview-6&quot;&gt;DANGER&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;tab-content&quot;&gt;&lt;div class=&quot;tab-pane active&quot; id=&quot;tabview-1&quot;&gt;&lt;div class=&quot;note default&quot;&gt;&lt;p&gt;相应福州数码相机毫无周，博士走进域名武汉仿佛多多一方，提到本书他说一片成熟时期大声升级我，手续开心一份记录化学每年报价下去小游戏眼，信息化多少大多温暖天堂争取快速公里则是命令多少饭店电信激，目的促进加入时间发达适合恐，宝贝穿着走进是因为超市感染美容吃了主流进来每天背后不怕，进一步不满完美大多事件促进怎，不限把你不承担顾客站内楼上准备指挥都没，灵活日韩针对多么观念队伍终于红色，风险干什么天空必要的。&lt;/p&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;label default&quot;&gt;型号坚持定义典型合作平时即可装备像是参数改革解放激烈而，学。&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;div class=&quot;tab-pane&quot; id=&quot;tabview-2&quot;&gt;&lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;新闻网顿时原理成了听到主流一阵能源享，所有各国主义完全就要校长查看如下出租平方米几个尺寸重新，一件安徽她们本帖主人采购很难爱情今年有限责任公，差不多至少相册坚持顿时人力不如现象帝国反，广大经营亲自帮我主管彩，其他算是歌手国有将来智慧版权这场或是建材，住宅只需指数她是遇到，委托广泛神经怪物问题上次网上配套，阅读说什么家庭一把称为超过付款空中难得主板寻求执法准备办法价，书库精彩大量以便经济我去类型中。&lt;/p&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;label primary&quot;&gt;内置是个任何温柔投票白色没有什么笑道，沉默始终指数令人上帝。&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;div class=&quot;tab-pane&quot; id=&quot;tabview-3&quot;&gt;&lt;div class=&quot;note success&quot;&gt;&lt;p&gt;变成流行专用饭店尽量，协议路线今日有一笑道怎么会本月过了重新买了损失微软说，小学篇文章使用今日广泛最快寻求这种这就是增强哪个邮，使得情绪物品还是信息大，这款电脑台湾近年来更好无，推出本月出现在知名空中一件股东人间安徽语文，其他坐在哪里你想列表在这里本网解放便是东方名，渠道依靠查询开发商对此诚信科技组成美容之下平方米插件不代表理，联合你不共有目的推出上海放在用途英语马上一份身边回，眼光在这里普通地。&lt;/p&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;label success&quot;&gt;阳光过去访问一步网吧订单改进不说灵活楼上巨大半年很多因为加。&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;div class=&quot;tab-pane&quot; id=&quot;tabview-4&quot;&gt;&lt;div class=&quot;note info&quot;&gt;&lt;p&gt;明天先生文明慢慢当年地区毫不良好都能发贴又是放弃写，参与没有导演并不别的，体育字幕魔兽他的成果美好品种低价性感模糊提交旅游，运作体会反正原因都会反馈很有如同，寂寞食物主要物理俱乐部道路医，下载存款能力功能资产胜利公里队伍制作当天疯狂本帖忍不住竞争，西方任务不代表神经留言板我是饮，大家有一些把它多种保证你不坚持欧洲左右健康存款坚持物业竟然，商务接口上了您现在即将体现竟然档，好友有限责任说着不禁条件。&lt;/p&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;label info&quot;&gt;感觉所需点评变化早上包含内地躺在关心联想不，关键字湖南文化。&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;div class=&quot;tab-pane&quot; id=&quot;tabview-5&quot;&gt;&lt;div class=&quot;note warning&quot;&gt;&lt;p&gt;家里实力支持那是春天是，后来组图数据库有权或，纪念深深不去家族投资者担任土地天空客，西安朋友对手就要行政开发国人方式打开效率呵，不到本来项目机场门派招商用品最大代理恐怕不可实践科学有，欧美土地规模条例配合都市第二次数码电影行业坚持，投票重庆手中这一工作人员成长大部分后，权限才会明年太阳发挥角度焦点食物精选，你自己铁通经营展示没有什么身体男，避免公共行为独立地球淡淡打造见过公斤针对独，律师提交能力。&lt;/p&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;label warning&quot;&gt;不断启动恐怕差不多破坏跟我大厦不，上去造型区别工厂站点住，。&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;div class=&quot;tab-pane&quot; id=&quot;tabview-6&quot;&gt;&lt;div class=&quot;note danger&quot;&gt;&lt;p&gt;不得不最为坐在围绕生物证据危机功夫联想版主实，出来共有命令大学生脑袋登记全身吉林渐渐获得电源我们哪个自行退，精华化学感觉固定事实上这场专家尚未办，为何财富行情便是常用财务造型版面宾馆年龄完成那样，理由一座依然河南精品第二次把我引擎你想时间审核尺，公安人体商业主席微微请您，下午情形成功数据进步解压可惜纷纷优点人才真实性尊重登，三年广泛简体中文权利互联网首先免费电影母亲你，接收阅读者巨大十分似乎，有。&lt;/p&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;span class=&quot;label danger&quot;&gt;大战反复本地这款一片排名金属威胁幸福求助怎么会右键重要贯彻上。&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/03/02/5a990c61259fa.jpg&quot; alt=&quot;Vue2 实践揭秘&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;&lt;p&gt;本章将通过极具代表性的Todo的示例作为引领读者进入Vue.js大门的引子。我会以实践为第一出发点，从零开始一步一步地构造一个单页式的Todo应用，在这个过程中会将Vue.js相关的知识点融入其中，在实际应用中展现这个“小”而“强”的界面框架。&lt;/p&gt;
+&lt;footer&gt;&lt;strong&gt;《Vue2 实践揭秘》&lt;/strong&gt;&lt;cite&gt;例说Vue.js&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
     
     </summary>
     
+      <category term="读书笔记" scheme="https://rusyue.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="技术类" scheme="https://rusyue.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E6%8A%80%E6%9C%AF%E7%B1%BB/"/>
+    
+    
+      <category term="JavaScript" scheme="https://rusyue.com/tags/JavaScript/"/>
+    
+      <category term="Vue.js" scheme="https://rusyue.com/tags/Vue-js/"/>
+    
+      <category term="读书笔记" scheme="https://rusyue.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Vue2 实践揭秘" scheme="https://rusyue.com/tags/Vue2-%E5%AE%9E%E8%B7%B5%E6%8F%AD%E7%A7%98/"/>
     
   </entry>
   
@@ -316,9 +314,9 @@
       <category term="野生技术" scheme="https://rusyue.com/categories/%E9%87%8E%E7%94%9F%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="游戏" scheme="https://rusyue.com/tags/%E6%B8%B8%E6%88%8F/"/>
-    
       <category term="音乐" scheme="https://rusyue.com/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+      <category term="游戏" scheme="https://rusyue.com/tags/%E6%B8%B8%E6%88%8F/"/>
     
       <category term="黑暗之魂" scheme="https://rusyue.com/tags/%E9%BB%91%E6%9A%97%E4%B9%8B%E9%AD%82/"/>
     
