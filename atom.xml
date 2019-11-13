@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rusyue.com/"/>
-  <updated>2019-02-08T09:38:31.191Z</updated>
+  <updated>2019-11-13T10:27:41.099Z</updated>
   <id>https://rusyue.com/</id>
   
   <author>
@@ -17,40 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Vue 2.0 的建议学习顺序</title>
-    <link href="https://rusyue.com/2019/02/Vue-2-0-%E7%9A%84%E5%BB%BA%E8%AE%AE%E5%AD%A6%E4%B9%A0%E9%A1%BA%E5%BA%8F/"/>
-    <id>https://rusyue.com/2019/02/Vue-2-0-的建议学习顺序/</id>
-    <published>2019-02-08T08:11:06.000Z</published>
-    <updated>2019-02-08T09:38:31.191Z</updated>
+    <title>Gallery</title>
+    <link href="https://rusyue.com/2019/11/gallery/"/>
+    <id>https://rusyue.com/2019/11/gallery/</id>
+    <published>2019-11-13T10:12:14.000Z</published>
+    <updated>2019-11-13T10:27:41.099Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="起步"><a href="#起步" class="headerlink" title="起步"></a>起步</h2><ol><li><p>扎实的 <code>JavaScript</code> / <code>HTML</code> / <code>CSS</code> 基本功。这是前置条件。 ✅</p></li><li><p>通读官方教程 (guide) 的基础篇。不要用任何构建工具，就只用最简单的 <code>&lt;script&gt;</code>，把教程里的例子模仿一遍，理解用法。不推荐上来就直接用 <code>vue-cli</code> 构建项目，尤其是如果没有 <code>Node</code>/<code>Webpack</code> 基础。 ✅</p></li><li><p>照着官网上的示例，自己想一些类似的例子，模仿着实现来练手，加深理解。 📌</p></li></ol><a id="more"></a><ol start="4"><li><p>阅读官方教程进阶篇的前半部分，到『自定义指令 (<code>Custom Directive</code>) 』为止。着重理解 Vue 的响应式机制和组件生命周期。『渲染函数（<code>Render Function</code>)』如果理解吃力可以先跳过。</p></li><li><p>阅读教程里关于路由和状态管理的章节，然后根据需要学习 <code>vue-router</code> 和 <code>vuex</code>。同样的，先不要管构建工具，以跟着文档里的例子理解用法为主。</p></li><li><p>走完基础文档后，如果你对于基于 Node 的前端工程化不熟悉，就需要补课了。下面这些严格来说并不是 Vue 本身的内容，也不涵盖所有的前端工程化知识，但对于大型的 Vue 工程是前置条件，也是合格的『前端工程师』应当具备的知识。</p></li></ol><h2 id="前端生态-工程化"><a href="#前端生态-工程化" class="headerlink" title="前端生态/工程化"></a>前端生态/工程化</h2><ol><li><p>了解 JavaScript 背后的规范，ECMAScript 的历史和目前的规范制定方式。学习 <code>ES2015/16</code> 的新特性，理解 <code>ES2015 modules</code>，适当关注还未成为标准的提案。</p></li><li><p>学习命令行的使用。建议用 Mac。</p></li><li><p>学习 <code>Node.js</code> 基础。建议使用 <code>nvm</code> 这样的工具来管理机器上的 Node 版本，并且将 npm 的 registry 注册表配置为淘宝的镜像源。至少要了解 npm 的常用命令，<code>npm scripts</code> 如何使用，语义化版本号规则，<code>CommonJS</code> 模块规范（了解它和 ES2015 Modules 的异同），Node 包的解析规则，以及 Node 的常用 API。应当做到可以自己写一些基本的命令行程序。注意最新版本的 Node (6+) 已经支持绝大部分 ES2015 的特性，可以借此巩固 ES2015。</p></li><li><p>了解如何使用 / 配置 <code>Babel</code> 来将 ES2015 编译到 ES5 用于浏览器环境。</p></li><li><p>学习 <code>Webpack</code>。Webpack 是一个极其强大同时也复杂的工具，作为起步，理解它的『一切皆模块』的思想，并基本了解其常用配置选项和 <code>loader</code> 的概念/使用方法即可，比如如何搭配 Webpack 使用 Babel。学习 Webpack 的一个挑战在于其本身文档的混乱，建议多搜索搜索，应该还是有质量不错的第三方教程的。英文好的建议阅读 <code>Webpack 2.0</code> 的文档，比起 1.0 有极大的改善，但需要注意和 1.0 的不兼容之处。</p></li></ol><h2 id="Vue-进阶"><a href="#Vue-进阶" class="headerlink" title="Vue 进阶"></a>Vue 进阶</h2><ol><li><p>有了 <code>Node</code> 和 <code>Webpack</code> 的基础，可以通过 <code>vue-cli</code> 来搭建基于 Webpack ，并且支持单文件组件的项目了。建议用 <code>webpack-simple</code> 这个模板开始，并阅读官方教程进阶篇剩余的内容以及 <code>vue-loader</code> 的文档，了解一些进阶配置。有兴趣的可以自己亲手从零开始搭一个项目加深理解。</p></li><li><p>根据 例子 尝试在 <code>Webpack</code> 模板基础上整合 <code>vue-router</code> 和 <code>vuex</code></p></li><li><p>深入理解 <code>Virtual DOM</code> 和『渲染函数 (<code>Render Functions</code>)』这一章节（可选择性使用 <code>JSX</code>)，理解模板和渲染函数之间的对应关系，了解其使用方法和适用场景。</p></li><li><p>（可选）根据需求，了解服务端渲染的使用（需要配合 Node 服务器开发的知识）。其实更重要的是理解它所解决的问题并搞清楚你是否需要它。</p></li><li><p>阅读开源的 Vue 应用、组件、插件源码，自己尝试编写开源的 Vue 组件、插件。</p></li><li><p>参考 贡献指南 阅读 Vue 的源码，理解内部实现细节。（需要了解 Flow）</p></li><li><p>参与 Vue GitHub issue 的定位 -&gt; 贡献 PR -&gt; 加入核心团队 -&gt; 升任 CTO -&gt; 迎娶白富美…（误</p></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;起步&quot;&gt;&lt;a href=&quot;#起步&quot; class=&quot;headerlink&quot; title=&quot;起步&quot;&gt;&lt;/a&gt;起步&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;扎实的 &lt;code&gt;JavaScript&lt;/code&gt; / &lt;code&gt;HTML&lt;/code&gt; / &lt;code&gt;CSS&lt;/code&gt; 基本功。这是前置条件。 ✅&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;通读官方教程 (guide) 的基础篇。不要用任何构建工具，就只用最简单的 &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;，把教程里的例子模仿一遍，理解用法。不推荐上来就直接用 &lt;code&gt;vue-cli&lt;/code&gt; 构建项目，尤其是如果没有 &lt;code&gt;Node&lt;/code&gt;/&lt;code&gt;Webpack&lt;/code&gt; 基础。 ✅&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;照着官网上的示例，自己想一些类似的例子，模仿着实现来练手，加深理解。 📌&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-      <category term="前端相关" scheme="https://rusyue.com/categories/%E5%89%8D%E7%AB%AF%E7%9B%B8%E5%85%B3/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>bh3 group pictures</title>
-    <link href="https://rusyue.com/2018/03/bh3-group-pictures/"/>
-    <id>https://rusyue.com/2018/03/bh3-group-pictures/</id>
-    <published>2018-03-11T04:40:08.000Z</published>
-    <updated>2018-12-18T13:33:57.875Z</updated>
-    
-    <content type="html"><![CDATA[<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><a href="//r.photo.store.qq.com/psb?/V12JyoSV2tjusx/pjzVvKYJMIPw5xmgU9N7Kwun43z5tD*x3zZNQwj3CFQ!/r/dFIBAAAAAAAA&amp;bo=7QWAAiQO9wURCYw!&amp;rf=photolist_yake_qzoneimgout.png" class="fancybox fancybox.image" rel="group" data-fancybox="pictures"><img src="//r.photo.store.qq.com/psb?/V12JyoSV2tjusx/pjzVvKYJMIPw5xmgU9N7Kwun43z5tD*x3zZNQwj3CFQ!/r/dFIBAAAAAAAA&amp;bo=7QWAAiQO9wURCYw!&amp;rf=photolist_yake_qzoneimgout.png" alt="崩坏3rd—德丽莎_68311072_p0.jpg"></a></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><a href="//r.photo.store.qq.com/psb?/V12JyoSV2tjusx/dtZq4lB411Xt.RXLWMXrQNW1hoiJByRAcFxJ4Kn3tHo!/r/dFoAAAAAAAAA&amp;bo=KwtABk8LVAYRCU4!&amp;rf=photolist_yake_qzoneimgout.png" class="fancybox fancybox.image" rel="group" data-fancybox="pictures"><img src="//r.photo.store.qq.com/psb?/V12JyoSV2tjusx/dtZq4lB411Xt.RXLWMXrQNW1hoiJByRAcFxJ4Kn3tHo!/r/dFoAAAAAAAAA&amp;bo=KwtABk8LVAYRCU4!&amp;rf=photolist_yake_qzoneimgout.png" alt="崩坏3rd—德丽莎_68311072_p2.jpg"></a></div><div class="group-picture-column" style="width: 33.333333333333336%;"><a href="//r.photo.store.qq.com/psb?/V12JyoSV2tjusx/Uva**JltA3bEct4i*nYB200*xqK5Z8je6R*KiwBIOIA!/r/dFIBAAAAAAAA&amp;bo=KwtABp4WqAwRCXQ!&amp;rf=photolist_yake_qzoneimgout.png" class="fancybox fancybox.image" rel="group" data-fancybox="pictures"><img src="//r.photo.store.qq.com/psb?/V12JyoSV2tjusx/Uva**JltA3bEct4i*nYB200*xqK5Z8je6R*KiwBIOIA!/r/dFIBAAAAAAAA&amp;bo=KwtABp4WqAwRCXQ!&amp;rf=photolist_yake_qzoneimgout.png" alt="崩坏3rd—德丽莎_68311072_p3.jpg"></a></div><div class="group-picture-column" style="width: 33.333333333333336%;"><a href="//r.photo.store.qq.com/psb?/V12JyoSV2tjusx/htBvm1qiERBA3bGvTl6d5H6W57iUONwja80.76ikuUQ!/r/dFMBAAAAAAAA&amp;bo=KwtABk8LVAYRCU4!&amp;rf=photolist_yake_qzoneimgout.png" class="fancybox fancybox.image" rel="group" data-fancybox="pictures"><img src="//r.photo.store.qq.com/psb?/V12JyoSV2tjusx/htBvm1qiERBA3bGvTl6d5H6W57iUONwja80.76ikuUQ!/r/dFMBAAAAAAAA&amp;bo=KwtABk8LVAYRCU4!&amp;rf=photolist_yake_qzoneimgout.png" alt="崩坏3rd—德丽莎_68311072_p4.jpg"></a></div></div></div></div>]]></content>
+    <content type="html"><![CDATA[<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><a href="https://i.loli.net/2019/11/13/zYvZHqBxXbirg2V.jpg" class="fancybox fancybox.image" rel="noopener" data-fancybox="pictures" target="_blank"><img src="https://i.loli.net/2019/11/13/zYvZHqBxXbirg2V.jpg" alt="_03.jpg"></a></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 33.333333333333336%;"><a href="https://i.loli.net/2019/11/13/SmPdTD1KeGYfAhH.jpg" class="fancybox fancybox.image" rel="noopener" data-fancybox="pictures" target="_blank"><img src="https://i.loli.net/2019/11/13/SmPdTD1KeGYfAhH.jpg" alt="_05.jpg"></a></div><div class="group-picture-column" style="width: 33.333333333333336%;"><a href="https://i.loli.net/2019/11/13/CMEUmrDsTKFfAYd.jpg" class="fancybox fancybox.image" rel="noopener" data-fancybox="pictures" target="_blank"><img src="https://i.loli.net/2019/11/13/CMEUmrDsTKFfAYd.jpg" alt="_06.jpg"></a></div><div class="group-picture-column" style="width: 33.333333333333336%;"><a href="https://i.loli.net/2019/11/13/Xfg9hPjLQEyFIOs.jpg" class="fancybox fancybox.image" rel="noopener" data-fancybox="pictures" target="_blank"><img src="https://i.loli.net/2019/11/13/Xfg9hPjLQEyFIOs.jpg" alt="_07.jpg"></a></div></div></div></div>]]></content>
     
     <summary type="html">
     
@@ -934,6 +907,30 @@
       <category term="读书笔记" scheme="https://rusyue.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
       <category term="JavaScript高级程序设计" scheme="https://rusyue.com/tags/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES6学习笔记-箭头函数</title>
+    <link href="https://rusyue.com/2017/03/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/"/>
+    <id>https://rusyue.com/2017/03/ES6学习笔记-箭头函数/</id>
+    <published>2017-03-03T14:21:35.000Z</published>
+    <updated>2018-11-04T11:31:51.515Z</updated>
+    
+    <content type="html"><![CDATA[<p>箭头函数是ES6中一个新增的特性，今天我们就来看看它是如何使用的。</p><a id="more"></a><h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p>ES6 允许使用“箭头”（=&gt;）定义函数。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> f = <span class="function"><span class="params">v</span> =&gt;</span> v;</span><br></pre></td></tr></table></figure></p><p>等同于<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> f = <span class="function"><span class="keyword">function</span>(<span class="params">v</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> v;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p><p>我们可以看到箭头前面的 v 是作为函数的参数，箭头后面的 v 是作为函数的返回值，那么箭头函数的结构差不多就明了了。</p><p>如果你不需要参数，或需要多个参数，就使用一个圆括号在参数部分，也就是箭头的前面：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function">(<span class="params">num1, num2</span>) =&gt;</span> num1 + num2;</span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p><p>通过之前的例子我们可以知道，箭头后面的内容就是函数要返回的内容，但这仅限于函数体用一句语句就可以解决的情况，如果函数体拥有一句以上的语句，你需要将函数体中的语句用大括号括起来，并仍然需要使用<code>return</code>语句将返回值返回：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function">(<span class="params">num1, num2</span>) =&gt;</span> &#123; <span class="keyword">return</span> num1 + num2; &#125;</span><br></pre></td></tr></table></figure></p><p>如果你想要返回一个对象，必须用括号将这个对象括起来：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> id = <span class="function"><span class="params">x</span> =&gt;</span>(&#123; <span class="attr">id</span> : x , <span class="attr">name</span> : <span class="string">'name'</span> &#125;)</span><br></pre></td></tr></table></figure></p><p>箭头函数可以与变量解构结合使用。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> full = <span class="function">(<span class="params">&#123; first, last &#125;</span>) =&gt;</span> first + <span class="string">' '</span> + last;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">full</span>(<span class="params">person</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> person.first + <span class="string">' '</span> + person.last;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="箭头函数的作用"><a href="#箭头函数的作用" class="headerlink" title="箭头函数的作用"></a>箭头函数的作用</h3><p>对于箭头函数的作用，个人认为有三点：</p><ol><li><p>箭头函数使函数的表达更为简洁。<br> 对于简单的一些功能函数，箭头函数相比于传统函数的表达更为简洁，并且代码量也更少，通常只需要一行。</p></li><li><p>简化回调函数：</p> <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 正常函数写法</span></span><br><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>].map(<span class="function"><span class="keyword">function</span> (<span class="params">x</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> x * x;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 箭头函数写法</span></span><br><span class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>].map(<span class="function"><span class="params">x</span> =&gt;</span> x * x);</span><br></pre></td></tr></table></figure><p> 这样使代码更加简洁也更加易读。</p></li><li><p>箭头函数可以将this对象绑定在定义时的作用域中，这种特性非常利于封装回调函数：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> handler = &#123;</span><br><span class="line">  id: <span class="string">'123456'</span>,</span><br><span class="line"></span><br><span class="line">  init: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.addEventListener(<span class="string">'click'</span>,</span><br><span class="line">      event =&gt; <span class="keyword">this</span>.doSomething(event.type), <span class="literal">false</span>);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  doSomething: <span class="function"><span class="keyword">function</span>(<span class="params">type</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Handling '</span> + type  + <span class="string">' for '</span> + <span class="keyword">this</span>.id);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li></ol><p>上面代码的<code>init</code>方法中，使用了箭头函数，这导致这个箭头函数里面的<code>this</code>，总是指向<code>handler</code>对象。否则，回调函数运行时，<code>this.doSomething</code>这一行会报错，因为此时<code>this</code>指向<code>document</code>对象。</p><h3 id="使用箭头函数时要注意"><a href="#使用箭头函数时要注意" class="headerlink" title="使用箭头函数时要注意"></a>使用箭头函数时要注意</h3><ol><li>函数体内的<code>this</code>对象，就是定义时所在的对象，而不是使用时所在的对象。</li><li>不可以当作构造函数，也就是说，不可以使用<code>new</code>命令，否则会抛出一个错误。</li><li>不可以使用<code>arguments</code>对象，该对象在函数体内不存在。如果要用，可以用 <code>rest</code>参数代替。</li><li>不可以使用<code>yield</code>命令，因此箭头函数不能用作 Generator 函数。</li></ol><p>这大概就是对箭头函数的大致介绍了，其他的还要小伙伴们自己去探索，祝大家学习愉快哦。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;箭头函数是ES6中一个新增的特性，今天我们就来看看它是如何使用的。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端相关" scheme="https://rusyue.com/categories/%E5%89%8D%E7%AB%AF%E7%9B%B8%E5%85%B3/"/>
+    
+    
+      <category term="JavaScript" scheme="https://rusyue.com/tags/JavaScript/"/>
+    
+      <category term="ES6" scheme="https://rusyue.com/tags/ES6/"/>
     
   </entry>
   
