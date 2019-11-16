@@ -1861,7 +1861,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e4ffff;
+  background: #17de11;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3381,17 +3381,47 @@ a.fancybox + br {
   font-size: 0;
   display: none;
 }
-.no-border {
-  border: none !important;
+.article-quote-content {
+  margin: 80px 0 40px 0;
 }
-.ta-center {
-  text-align: center;
+.article-quote-content::before {
+  top: -30px;
 }
-.cq-author {
-  text-align: right !important;
+.article-quote-content::after {
+  bottom: -30px;
+}
+.article-quote-content br {
+  display: block;
+  height: 0px;
+  font-size: 0px;
+  line-height: 0px;
+}
+.article-quote-content,
+.article-quote-content p {
+  text-align: justify;
+}
+.article-quote-content > p {
+  padding: 0em 2em;
+  text-indent: 2em;
+}
+.article-quote-infos {
+  text-align: right;
   font-style: italic;
-  padding-right: 4em;
-  color: #999;
+  color: #888;
+}
+.article-quote-links {
+  cursor: pointer;
+  color: #888;
+  border-bottom: 1px solid #888;
+  transition: color 0.4s ease-in;
+}
+.article-quote-links:hover {
+  color: #555;
+  border-bottom-color: #555;
+}
+.article-quote-spliter {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 .site-title {
   font-family: "Uncial Antiqua", "Lato", "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -3403,6 +3433,14 @@ a.fancybox + br {
 .footer-inner,
 .copyright span {
   font-family: "Cinzel", "Constantia";
+}
+.no-border {
+  border: none !important;
+}
+.ta-center,
+.ta-center p {
+  text-align: center !important;
+  text-indent: 0 !important;
 }
 .post-body h1 +hr,
 .post-body h2 +hr,

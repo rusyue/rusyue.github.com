@@ -365,24 +365,51 @@
       <div class="post-body">
         
         
-          <!-- DarkSoulsOriginSoundtracks
-<div class="aplayer"
-    data-id="2103640238"
-    data-server="netease"
-    data-autoplay="true"
-    data-type="playlist">
-</div>
- -->
-<!-- https://music.163.com/playlist?id=511466171&userid=35238336 -->
+          <!-- https://music.163.com/playlist?id=511466171&userid=35238336 -->
 <div class="aplayer" data-id="511466171" data-server="netease" data-autoplay="true" data-order="random" data-type="playlist"><br></div>
 
-<hr>
-<p style="font-size: 1.4em; color: #666; text-align: center;">随便说点儿什么吧~ Σ( ° △ °|||)︴</p>
+<blockquote class="blockquote-center article-quote-content ta-center" style="font-size:36px;"><p>正在加载今日诗词….</p>
+</blockquote><div class="article-quote-infos"><span class="article-quote-spliter">——</span><span class="article-quote-bookname" style="">《正在加载诗词名...》</span><span class="article-quote-author">正在加载作者...</span><span class="article-quote-spliter">-</span><span class="article-quote-chapter">一言·古诗词</span></div>
+<script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+<script type="text/javascript">
+   // $webfont.load(".article-quote-content p", "414ff3ee4220440496085cad3d2c9085", "ChekiangSung");
+   // $webfont.load(".article-quote-content p", "b4198ba5be8a4bbcb312cefd967deb49", "OldNewspapersSung");
+   // $webfont.load(".article-quote-content p", "ec73f7ac271c49a2be32a09e89ccb0b6", "TSSunOld");
+   // $webfont.load(".article-quote-content p", "99918cee1a0e4e0888412254e3fa3e15", "ToppanBunkyuMidashiMinchoStdN-ExtraBold");
+   // $webfont.load(".article-quote-content p", "bc02d3671b56439894a494b620cb84cd", "yuweij");
+   // $webfont.load(".article-quote-content p", "2b2239981e47471eb279e0bf8072e0e0", "lixukexingshu");
+   $webfont.load(".article-quote-content p", "0441ecdbdca341898d64f2e5b421c739", "stfyanti");
+   $webfont.draw();
+</script>
 
-<hr>
-<!-- <blockquote class="blockquote-center"><p style="font-size: 22px;">随便说点儿什么吧~ Σ( ° △ °|||)︴</p><p class="cq-author"> ——— 可怜的老十三</p>
-</blockquote> –&gt;
--->
+<script>
+    const shiciContainer = document.querySelector('.article-quote-content');
+    const shiciContent = document.querySelector('.article-quote-content p');
+    const shiciAuthor = document.querySelector('.article-quote-author');
+    const shiciName = document.querySelector('.article-quote-bookname');
+    const shiciUpdateBtn = document.querySelector('.article-quote-chapter');
+    const shiciAPI = 'https://v1.jinrishici.com/all.json';
+
+    function updateShici() {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', shiciAPI + '?timp=' + Date.now(), true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const shiciData = JSON.parse(xhr.responseText);
+                shiciContent.innerText = shiciData.content;
+                shiciAuthor.innerText = shiciData.author;
+                shiciName.innerText = `《${shiciData.origin}》`;
+                $webfont.submit(".article-quote-content p");
+            }
+        }
+        xhr.send(null);
+    }
+
+    updateShici();
+    shiciUpdateBtn.classList.add('article-quote-links');
+    shiciUpdateBtn.addEventListener('click', updateShici, false);
+</script>
+
         
       </div>
       
@@ -445,7 +472,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-count">26</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -566,7 +593,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span class="busuanzi-insert" title="站点总字数">85k</span>
+    <span class="busuanzi-insert" title="站点总字数">88k</span>
   
 
   
@@ -575,7 +602,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span class="busuanzi-insert" title="站点总阅读时长">3:31</span>
+    <span class="busuanzi-insert" title="站点总阅读时长">3:40</span>
   
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
